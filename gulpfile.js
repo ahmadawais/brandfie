@@ -8,6 +8,7 @@ var jade = require('gulp-jade');
 var base64 = require('gulp-base64');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var ghPages = require('gulp-gh-pages');
 
 //gulp stuff (no watch breaking on errors)
 var plumber = require('gulp-plumber');
@@ -84,7 +85,13 @@ gulp.task('compress_img', function() {
 		.pipe(gulp.dest('build/img'))
 });
 
-gulp.task('dev:watch', function () {
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
+// gulp.task('dev:watch', function () {
+gulp.task('default', ['jade', 'css', 'main_js', 'compress_img', 'issues'], function () {
 	gulp.watch('src/templates/**', ['jade']),
 	gulp.watch('src/css/**', ['css']),
 	gulp.watch('src/js/main.js', ['main_js']),
