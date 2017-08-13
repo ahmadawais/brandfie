@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		//the must have tags
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width")
+		//the must have assets
+		link(rel="stylesheet", href="css/main.css")
+		script(src="js/main.js", defer)
+		//page title
+		title
+			| Phoenix Bootstrap UI kit | 01 sample
+	body
+		main.page_wrapper
+			include components/menu/07
+
+			include components/covers/10
+			include components/about/06
+			include components/contents/01
+			include components/features/05
+			include components/call_to_actions/01
+			include components/prices/04
+			include components/testimonials/05
+			include components/footers/04
+			// == START OF VIDEO POPUP COMPONENT ==
+			include components/popups/video
+			// == END OF VIDEO POPUP COMPONENT ==
+	.js-overlay.js-close-navigation.js-close-menu.overlay

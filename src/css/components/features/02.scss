@@ -1,0 +1,33 @@
+.features--02{
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media (#{$max_phones}){
+		padding: 50px 0;
+	}
+}
+.features__title_box--02{
+	margin-bottom: 50px;
+}
+.features__title--02{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 44px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.features__item--02{
+	margin-bottom: 50px;
+}
+.features__description--02{
+}
+.features__item_icon_circle--02{
+	height: 35px;
+
+	background-color: transparent;
+}

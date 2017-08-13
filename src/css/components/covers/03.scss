@@ -1,0 +1,64 @@
+//03 cover specific styles
+.cover--03{
+	height: auto;
+
+	padding-top: 250px;
+	padding-bottom: 70px;
+
+	background-color: $sky;
+
+	@media (#{$max_phones}){
+		padding-top: 150px;
+	}
+}
+.cover__content_box--03{
+	margin: auto;
+
+	text-align: center;
+}
+.cover__title--03{
+	position: relative;
+	margin-bottom: 50px;
+
+	@media (#{$max_phones}){
+		margin-bottom: 40px;
+	}
+}
+.cover__title_text--03{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 44px;
+	color: white;
+	letter-spacing: 0.06em;
+
+	@media (#{$max_tablets}){
+	}
+	@media (#{$max_phones}){
+		font-size: 34px;
+
+		br{
+			display: none;
+		}
+	}
+}
+.cover__description_box--03{
+	display: inline-block;
+
+	margin-bottom: 70px;
+
+	max-width: 350px;
+
+	@media (#{$max_phones}){
+		margin-bottom: 40px;
+	}
+}
+.cover__description_text--03{
+	@include font_loader($playfair, 7, 'n');
+
+	color: white;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.cover__button_box--03{
+	text-align: center;
+}

@@ -1,0 +1,39 @@
+.contents--02{
+	text-align: center;
+}
+.contents__title--02{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 30px;
+
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.contents__text--02{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: inline-block;
+
+	margin-bottom: 40px;
+
+	font-size: 14px;
+	color: $concrete;
+}
+.contents__buttons_box--02{
+	margin-bottom: 80px;
+}
+.contents__image_box--02{
+	max-width: 440px;
+
+	margin: auto;
+}
+.contents__image--02{
+	width: 100%;
+
+	@media (#{$max_phones}){
+		width: 80%;
+	}
+}

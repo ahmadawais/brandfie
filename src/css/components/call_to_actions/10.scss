@@ -1,0 +1,48 @@
+.call_to_action--10{
+	padding: 100px 0;
+
+	background-size: 50% auto;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-color: $steel;
+
+	@media (#{$max_tablets}){
+		position: relative;
+		overflow: hidden;
+
+		background-size: cover;
+
+		text-align: center;
+
+		&:before{
+			content: "";
+			position: absolute;
+
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+			background-color: rgba($steel, 0.7);
+		}
+	}
+
+	@media (#{$max_tablets}){
+		padding: 70px 0;
+	}
+}
+.call_to_action__title--10{
+	margin-bottom: 20px;
+
+	font-size: 36px;
+
+	@media (#{$max_phones}){
+		font-size: 22px;
+	}
+}
+.call_to_action__text--10{
+	margin-bottom: 0;
+
+	color: rgba(white, 0.8);
+	font-size: 13px;
+}

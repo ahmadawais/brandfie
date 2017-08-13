@@ -1,0 +1,45 @@
+.contacts{
+	position: relative;
+}
+.contacts__title{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 36px;
+
+	@media (#{$max_phones}){
+		font-size: 25px;
+	}
+}
+.contacts__item{
+	margin-bottom: 35px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.contacts__item_title{
+	@include font_loader($montserrat, 7, 'n');
+
+	display: block;
+	margin-bottom: 8px;
+
+	font-size: 13px;
+	color: $steel;
+	text-transform: uppercase;
+	font-style: normal;
+}
+.contacts__item_text{
+	color: $concrete;
+	font-size: 13px;
+}
+.contacts__map{
+	background-color: $rain;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+
+	margin: auto;
+}

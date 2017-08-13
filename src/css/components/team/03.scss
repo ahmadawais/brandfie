@@ -1,0 +1,219 @@
+.team--03{
+}
+.team__arrows_box--03{
+	max-width: 968px;
+
+	@media (#{$max_phones}){
+		display: none;
+	}
+}
+.team__box--03,
+.team__photos_box--03{
+	max-width: 700px;
+
+	margin: auto;
+}
+.team__photos_box--03{
+	margin-bottom: 10px;
+}
+.team__item_photo_box--03{
+	opacity: 0.6;
+
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	transform-origin: center;
+	transition: opacity 0.4s ease, transform 0.6s ease;
+
+	@media (#{$max_phones}){
+		opacity: 1;
+	}
+
+	&.slick-center{
+		opacity: 1;
+
+		transform: scale(1.76);
+
+		.team__item_photo--03{
+			box-shadow: 0 4.5px 17px rgba(36, 37, 38, 0.35);
+		}
+
+		@media (#{$max_phones}){
+			transform: scale(1.5);
+		}
+	}
+}
+.team__item_photo--03{
+	height: 79px;
+	width: 79px;
+
+	transition: box-shadow 0.4s ease;
+}
+.team__item--03{
+	margin: 0 10px;
+	padding: 0 20px 20px;
+
+	@media (#{$max_phones}){
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.team__item_text--03{
+	@include font_loader($playfair, 7, 'i');
+
+	position: relative;
+	display: block;
+
+	max-width: 400px;
+	padding: 30px 20px 0 20px;
+	margin: auto auto 30px;
+
+	font-size: 16px;
+	color: $steel;
+	font-style: italic;
+	line-height: 1.3;
+	letter-spacing: 0.08em;
+
+	&:before{
+		content: none;
+	}
+}
+.team__arrows_box--03{
+	position: absolute;
+	margin: auto;
+	z-index: 20;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	height: 46px;
+	width: 100%;
+}
+.team__arrow--03{
+	position: absolute;
+	border-radius: 50%;
+
+	height: 46px;
+	width: 46px;
+
+	transition: transform .4s ease, box-shadow .4s ease;
+
+	&:before,
+	&:after{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+
+		margin: auto;
+
+		transition: opacity .4s ease;
+	}
+
+	&:after{
+		opacity: 0;
+	}
+
+	&:hover{
+		&:before{
+			opacity: 0;
+		}
+		&:after{
+			opacity: 1;
+		}
+	}
+
+	&--left{
+		left: $container_side_margin;
+
+		&:hover{
+			transform: translateX(-5px);
+		}
+
+		&:before{
+			//the icons are set individually for each testimonial
+			//background: url(#{$icons_path}i--arrow--circle--white--left.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			//the icons are set individually for each testimonial
+			//background: url(#{$icons_path}i--arrow--circle--black--left.svg) no-repeat center / 100% auto;
+		}
+	}
+	&--right{
+		right: $container_side_margin;
+
+		&:hover{
+			transform: translateX(5px);
+		}
+
+		&:before{
+			//the icons are set individually for each testimonial
+			//background: url(#{$icons_path}i--arrow--circle--white--right.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			//the icons are set individually for each testimonial
+			//background: url(#{$icons_path}i--arrow--circle--black--right.svg) no-repeat center / 100% auto;
+		}
+	}
+
+	&:after,
+	&:before{
+		height: 100%;
+		width: 100%;
+	}
+	&:before{
+		opacity: 1;
+	}
+	&:after{
+		opacity: 0;
+	}
+
+	&:hover{
+		&:before{
+			opacity: 0;
+		}
+		&:after{
+			opacity: 1;
+		}
+
+		box-shadow: 1px 1.7px 15px rgba(188,198,208,0.3);
+	}
+
+	&--left{
+		&:hover{
+			background-color: white;
+		}
+
+		&:before{
+			background: url(#{$icons_path}i--arrow--circle--black--left.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			height: 13px;
+			width: 8px;
+
+			background: url(#{$icons_path}i--arrow--circle--black--left--hover.svg) no-repeat center / 100% auto;
+
+			transform: translateX(-1px) translateY(1px);
+		}
+	}
+	&--right{
+		&:hover{
+			background-color: white;
+		}
+
+		&:before{
+			background: url(#{$icons_path}i--arrow--circle--black--right.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			height: 13px;
+			width: 8px;
+
+			background: url(#{$icons_path}i--arrow--circle--black--right--hover.svg) no-repeat center / 100% auto;
+
+			transform: translateX(1px) translateY(1px);
+		}
+	}
+}

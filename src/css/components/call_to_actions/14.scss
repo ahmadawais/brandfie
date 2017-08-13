@@ -1,0 +1,50 @@
+.call_to_action--14{
+	padding: 100px 0;
+
+	@media (#{$max_tablets}){
+		padding: 50px 0 70px;
+
+		text-align: center;
+	}
+}
+.call_to_action__title--14{
+	margin-bottom: 20px;
+
+	font-size: 36px;
+	color: $steel;
+}
+.call_to_action__text--14{
+	margin-bottom: 0;
+
+	@media (#{$max_tablets}){
+		margin-bottom: 40px;
+	}
+}
+.call_to_action__input_box--14{
+	position: relative;
+
+	width: 100%;
+	max-width: 360px;
+
+	margin: auto;
+	padding-right: 30px;
+
+	@media (#{$min_tablets}){
+		position: absolute;
+		right: $container_side_margin;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.call_to_action__input--14{
+	width: 100%;
+}
+.call_to_action__button--14{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	@media (#{$max_phones}){
+		min-width: 120px;
+	}
+}

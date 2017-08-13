@@ -1,0 +1,45 @@
+//21 cover specific styles
+.cover--21{
+	overflow: hidden; //to crop the ipad pic
+}
+.cover__title--21{
+	margin-top: 172px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-top: 100px;
+	}
+}
+.cover__title_text--21{
+	@include font_loader($playfair, 7, 'n');
+
+	font-size: 54px;
+
+	@media (#{$max_tablets}){
+		font-size: 44px;
+	}
+	@media (#{$max_phones}){
+		font-size: 30px;
+	}
+}
+.cover__button_box--21{
+	margin-top: 60px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-top: 40px;
+	}
+}
+.cover__image_box--21{
+	margin: 65px auto 0;
+
+	max-width: 799px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-top: 45px;
+	}
+}

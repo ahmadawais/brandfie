@@ -1,0 +1,42 @@
+//15 cover specific styles
+.cover--15{
+	background-color: $steel;
+}
+.cover__content_box--15{
+	position: absolute;
+	top: 45%;
+	left: $container_side_margin;
+	right: $container_side_margin;
+	margin: auto;
+	transform: translateY(-50%);
+}
+.cover__description_box--15{
+	text-align: center;
+}
+.cover__description_text--15{
+	@include font_loader($montserrat, 4, 'n');
+
+	color: white;
+
+	font-size: 36px;
+	letter-spacing: 0.06em;
+	line-height: 1.4;
+
+	@media (#{$max_tablets}){
+		br{
+			display: none;
+		}
+	}
+	@media (#{$max_phones}){
+		font-size: 22px;
+	}
+}
+.cover__social_box--15{
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 10%;
+
+	text-align: center;
+}

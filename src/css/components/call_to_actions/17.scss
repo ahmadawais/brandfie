@@ -1,0 +1,64 @@
+.call_to_action--17{
+	padding: 200px 0 90px;
+
+	text-align: center;
+}
+.call_to_action__title--17{
+
+}
+.call_to_action__title_text--17{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 50px;
+	letter-spacing: 0.03em;
+	color: white;
+
+	@media (#{$max_laptop}){
+		font-size: 45px;
+	}
+	@media (#{$max_tablets}){
+		font-size: 35px;
+	}
+	@media (#{$max_phones}){
+		font-size: 30px;
+
+		br{
+			display: none;
+		}
+	}
+}
+.call_to_action__description_box--17{
+	max-width: 350px;
+
+	margin: 30px auto 70px;
+
+	@media (#{$max_phones}){
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+}
+.call_to_action__description_text--17{
+	@include font_loader($playfair, 4, 'i');
+
+	color: rgba(white, 0.67);
+
+	font-style: italic;
+	font-size: 17px;
+
+	@media (#{$max_phones}){
+		font-size: 13px;
+	}
+}
+.call_to_action__form--17{
+	max-width: 225px;
+
+	margin: auto auto 20px;
+}
+.call_to_action__form__item--17{
+	width: 100%;
+
+	margin-bottom: 10px;
+}
+.call_to_action__input_box--17 .call_to_action__message{
+	padding-top: 0;
+}

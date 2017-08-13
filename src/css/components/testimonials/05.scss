@@ -1,0 +1,119 @@
+.testimonials--05{
+	background-color: $rain;
+
+	.slick-dots{
+		margin-top: 30px;
+	}
+}
+.testimonials__arrows_box--05{
+}
+.testimonials__container--05{
+	position: relative;
+
+	margin: auto;
+
+	max-width: 1100px;
+}
+.testimonials__box--05{
+	max-width: 970px;
+
+	margin: auto;
+
+	position: relative;
+
+	&:after,
+	&:before{
+		content: "";
+		position: absolute;
+		z-index: 10;
+
+		top: 0;
+
+		width: 60px;
+		height: 100%;
+	}
+	&:after{
+		right: 0;
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba($rain,1) 100%);
+	}
+	&:before{
+		left: -1px;
+		background: linear-gradient(to right, rgba($rain,1) 0%,rgba(255,255,255,0) 100%);
+	}
+}
+.testimonials__item--05{
+	margin: 0 10px 10px;
+	padding: 35px 20px 20px;
+
+	background-color: white;
+
+	&.slick-center{
+		box-shadow: 2px 3.5px 20px rgba(188, 198, 208, 0.3);
+	}
+
+	transition: box-shadow 0.4s ease;
+}
+.testimonials__title--05{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 20px;
+
+	color: $steel;
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.testimonials__item_text--05{
+	padding-top: 45px;
+
+	font-size: 14px;
+
+	@media (#{$max_phones}){
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.testimonials__arrows_box--05{
+	height: 28px;
+}
+.testimonials__arrow--05{
+	height: 28px;
+	width: 28px;
+
+	box-shadow: 1px 1.7px 15px rgba(188, 198, 208, 0.3);
+	background-color: white;
+
+	&:after,
+	&:before{
+		height: 8px;
+		width: 4px;
+
+		margin: auto;
+	}
+	&:after{
+		opacity: 1;
+	}
+
+	&:hover{
+	}
+
+	&--left{
+		//&:before{
+		//	background: url(#{$icons_path}i--small-arrow--left.svg) no-repeat center / 100% auto;
+		//}
+		&:after{
+			background: url(#{$icons_path}i--small-arrow--black--left.svg) no-repeat center / 100% auto;
+		}
+	}
+	&--right{
+		//&:before{
+		//	background: url(#{$icons_path}i--small-arrow--right.svg) no-repeat center / 100% auto;
+		//}
+		&:after{
+			background: url(#{$icons_path}i--small-arrow--black--right.svg) no-repeat center / 100% auto;
+			transform: translateX(1px); //makes it visually centered
+		}
+	}
+}

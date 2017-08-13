@@ -1,0 +1,46 @@
+.team--01{
+	background-color: $stone;
+
+	.slick-dots{
+		margin-top: 30px;
+	}
+}
+.team__box--01{
+	max-width: 970px;
+
+	&:after,
+	&:before{
+		content: "";
+		position: absolute;
+		z-index: 10;
+
+		top: 0;
+
+		width: 60px;
+		height: 100%;
+	}
+	&:after{
+		right: 0;
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(246,246,246,1) 100%);
+	}
+	&:before{
+		left: -1px;
+		background: linear-gradient(to right, rgba(246,246,246,1) 0%,rgba(255,255,255,0) 100%);
+	}
+}
+.team__item--01{
+	margin: 0 10px 10px;
+	padding: 35px 35px 20px;
+
+	background-color: white;
+
+	&.slick-center{
+		box-shadow: 2px 3.5px 20px rgba(188, 198, 208, 0.3);
+	}
+
+	transition: box-shadow 0.4s ease;
+
+	@media (#{$max_phones}){
+		padding: 20px 15px 20px;
+	}
+}

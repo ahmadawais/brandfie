@@ -1,0 +1,173 @@
+.counter{
+	text-align: center;
+
+	@media (#{$max_phones}){
+		//text-align: left;
+	}
+}
+.counter__item{
+	@include clearfix;
+
+	display: inline-block;
+
+	text-align: left;
+
+	&--border{
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+
+		@media (#{$max_tablets}){
+			border: none;
+		}
+	}
+
+	@media (#{$_charts_smaller}){
+		display: block;
+
+		margin-bottom: 50px;
+
+		text-align: center;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.counter__title{
+	@include font_loader($montserrat, 7, 'n');
+
+	position: relative;
+
+	font-size: 10px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		@media (#{$_charts_smaller}){
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	&--icon-bubbles{
+		&:before{
+			width: 20px;
+			height: 19px;
+
+			background: url(#{$icons_path}i--bubbles.svg) no-repeat center / 100% auto;
+		}
+	}
+	&--icon-case{
+		&:before{
+			width: 18px;
+			height: 18px;
+
+			background: url(#{$icons_path}i--case.svg) no-repeat center / 100% auto;
+		}
+	}
+	&--icon-box{
+		&:before{
+			width: 16px;
+			height: 19px;
+
+			background: url(#{$icons_path}i--box.svg) no-repeat center / 100% auto;
+		}
+	}
+}
+.counter__number{
+	@include font_loader($montserrat, 4, 'n');
+
+	font-size: 48px;
+	color: white;
+	line-height: 1;
+	letter-spacing: 0.05em;
+}
+
+.counter__skill_item{
+	display: inline-block;
+
+	margin: 0 100px;
+
+	&:first-child{
+		margin-left: 0;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+
+	@media (#{$max_laptop}){
+		margin: 0 70px;
+	}
+	@media (#{$max_tablets}){
+		margin: 0 40px;
+	}
+	@media (#{$_charts_smaller}){
+		margin: 0 25px;
+	}
+	@media (#{$max_phones}){
+		display: block;
+
+		margin: 0 0 50px;
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+}
+.counter__skill_item_box{
+	position: relative;
+
+	margin: auto;
+
+	width: 122px;
+	height: 122px;
+
+	@media (#{$_charts_smaller}){
+		height: 70px;
+		width: 70px;
+	}
+}
+.counter__skill_item_percentage{
+	@include font_loader($montserrat, 4, 'n');
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	margin: auto;
+
+	font-size: 20px;
+	letter-spacing: 0.085em;
+
+	@media (#{$_charts_smaller}){
+		font-size: 14px;
+	}
+}
+.counter__skill_item_title{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-top: 30px;
+
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.counter__skill_item_chart{
+	stroke-dasharray: 364.4;
+	stroke-dashoffset: 364.4;
+
+	transform: rotate(-90deg);
+
+	transition: stroke-dashoffset 2s ease-out;
+
+	height: 98%;
+	width: 98%;
+}

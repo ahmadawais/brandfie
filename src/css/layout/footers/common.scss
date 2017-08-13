@@ -1,0 +1,90 @@
+.footer__container{
+	position: relative;
+}
+.footer__social_box{
+	@media (#{$max_tablets}){
+		position: absolute;
+		top: 0;
+		right: $container_side_margin;
+	}
+}
+.footer__nav{
+	@include clear_list;
+}
+.footer__nav__item{
+	display: inline-block;
+}
+.footer__nav__link{
+	@include clear_link;
+}
+.footer__description{
+	@include font_loader($montserrat, 3, 'n');
+
+	color: white;
+	font-size: 11px;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
+}
+.footer__copyright{
+	@include font_loader($montserrat, 3, 'n');
+
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.footer__logo_text{
+	@include font_loader($montserrat, 7, 'n');
+
+	position: relative;
+	top: 2px;
+
+	font-size: 16px;
+	color: white;
+	letter-spacing: 0.05em;
+}
+.footer__logo_box{
+	@include clear_link;
+	display: inline-block;
+	height: 30px;
+
+	img{
+		height: 100%;
+	}
+
+	@media (#{$max_tablets}){
+		margin-bottom: 20px;
+	}
+}
+.footer__menu{
+	@include clear_list;
+}
+.footer__menu__item{
+	margin-bottom: 15px;
+
+	@media (#{$min_tablets}) {
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.footer__menu__link{
+	@include font_loader($montserrat, 7, 'n');
+
+	color: white;
+	font-size: 13px;
+	letter-spacing: 0.05em;
+
+	&:hover, &:focus, &:active, &:visited{
+		color: white;
+		text-decoration: none;
+	}
+}
+.footer__menu__title{
+	@include font_loader($montserrat, 7, 'n');
+
+	color: rgba(white, 0.7);
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.works__item--03{
+	display: inline-block;
+
+	width: 600px;
+
+	@media (#{$max_phones}){
+		width: 350px;
+	}
+}
+.works__item_picture--03{
+	width: 100%;
+}

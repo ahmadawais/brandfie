@@ -1,0 +1,41 @@
+.call_to_action--08{
+	padding: 80px 0;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		padding: 50px 0 70px;
+	}
+}
+.call_to_action__title--08{
+	margin-bottom: 35px;
+}
+.call_to_action__form--08{
+	margin: auto;
+}
+input.call_to_action__form__item--08,
+button.call_to_action__form__item--08{
+	margin: 0 5px;
+}
+input.call_to_action__form__item--08{
+	width: 225px;
+
+	@media (#{$max_laptop}){
+		width: 185px;
+	}
+	@media (#{$max_tablets}){
+		margin-bottom: 10px;
+	}
+}
+.call_to_action__form__button--08{
+	@media (#{$max_laptop}){
+		min-width: 120px;
+	}
+	@media (#{$max_tablets}){
+		width: 185px;
+	}
+}

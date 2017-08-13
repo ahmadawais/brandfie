@@ -1,0 +1,35 @@
+.team--02 {
+}
+.team__box--02{
+	@extend .container;
+}
+.team__item--02 {
+
+	padding: 0 20px;
+
+	@media (#{$min_phones}){
+		display: inline-block;
+
+		vertical-align: top;
+
+		width: 49%;
+	}
+	@media (#{$min_tablets}){
+		width: 23%;
+	}
+	@media (#{$max_tablets}){
+		margin-bottom: 40px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.team__item_text--02{
+	margin-bottom: 20px;
+}
+.team__item_job--02{
+	display: block;
+
+	margin-bottom: 20px;
+}

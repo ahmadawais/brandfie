@@ -1,0 +1,58 @@
+//10 cover specific styles
+.cover--10{
+	overflow: hidden; //to crop the ipad pic
+
+	height: auto;
+	padding-bottom: 80px;
+
+	background-color: $rain;
+}
+.cover__title--10{
+	margin-top: 172px;
+
+	text-align: center;
+}
+.cover__title_text--10{
+	@include font_loader($playfair, 7, 'n');
+
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.cover__button_box--10{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	margin: auto;
+}
+.cover__button--10{
+	height: 74px;
+	width: 74px;
+
+	box-shadow: 2px 3.5px 20px rgba(50, 65, 87, 0.8);
+}
+.cover__image_box--10{
+	position: relative;
+
+	margin: 65px auto 50px;
+
+	max-width: 641px;
+
+	text-align: center;
+}
+.cover__features__item--10{
+	margin-bottom: 40px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px){
+		text-align: center;
+	}
+}

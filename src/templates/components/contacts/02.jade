@@ -1,0 +1,42 @@
+// == START OF contacts 02 ==
+.contacts.contacts--02
+	.contacts__map_box--02
+		.contacts__map.js-map(data-zoom="14", data-center-lat="40.8654697", data-center-lng="-73.8938313", data-pin-lat="40.8654697", data-pin-lng="-73.8938313")
+	.container.contacts__container--02
+		.row
+			.col-md-6.col-xs-12
+				h2.contacts__title.contacts__title--02
+					| Ask a Question
+				form.contacts__form--02(action='path/to/api', method='post')
+					.contacts__form__inputs_box--02
+						input.contacts__form__input--02.input.input--cloud-border.input--white(type='text', placeholder='Your name', value='', name='NAME')
+						input.contacts__form__input--02.input.input--cloud-border.input--white(type='email', required, placeholder='Your email', value='', name='EMAIL')
+					textarea.contacts__form_textarea--02.input.input--cloud-border.input--white(required, placeholder='Your message', value='', name='MESSAGE')
+					button.contacts__form_button--02.button.button--blue.button--small-radius(type='submit')
+						| send
+
+			.col-lg-3.col-md-5.col-md-offset-1.col-lg-offset-2.col-xs-12
+				.contacts__info--02
+					h2.contacts__title.contacts__title--02
+						| Our Contacts
+					.contacts__content--02
+						.contacts__item
+							h3.contacts__item_title
+								| Address
+							span.contacts__item_text
+								| 250 Bedford Park Blvd W,
+								br
+								| Bronx
+								br
+								| New York, NY, 10468
+						.contacts__item
+							h3.contacts__item_title
+								| Phone
+							span.contacts__item_text
+								| +1 646 245-2910
+						.contacts__item
+							h3.contacts__item_title
+								| email
+							a.contacts__item_text(href="mailto:hello@ui-market.com", target="_blank")
+								| hello@ui-market.com
+// == END OF contacts 02 ==

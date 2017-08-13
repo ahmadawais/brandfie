@@ -1,0 +1,29 @@
+.works--02{
+	text-align: center;
+}
+.works__container--02{
+	@extend .container;
+}
+.works__item--02{
+	float: left;
+
+	left: 0; //a hack for better filterizr plugin position
+
+	width: 25%;
+	height: 190px;
+
+	padding: 0 5px 10px;
+
+	@media (#{$max_tablets}){
+		height: 150px;
+	}
+	@media (max-width: 700px){
+		width: 33.3%;
+	}
+	@media (#{$max_phones}){
+		width: 50%;
+	}
+}
+.works__item_img--02{
+	height: 100%;
+}

@@ -1,0 +1,16 @@
+.call_to_action--05{
+	padding: 150px 0 170px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	text-align: center;
+
+	@media (#{$max_tablets}){
+		padding: 75px 0 85px;
+	}
+}
+.call_to_action__title--05{
+	margin-bottom: 40px;
+}

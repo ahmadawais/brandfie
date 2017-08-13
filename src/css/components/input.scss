@@ -1,0 +1,72 @@
+.input{
+	border: none;
+
+	height: 42px;
+	padding-left: 15px;
+
+	border-radius: 4px;
+
+	@include font_loader($montserrat, 4, 'n');
+
+	font-size: 11px;
+	color: white;
+
+	@include placeholder{
+		@include font_loader($montserrat, 4, 'n');
+
+		font-size: 11px;
+		color: white;
+
+		transition: opacity 0.3s ease, text-indent 0.3s ease;
+	}
+	&:focus{
+		@include placeholder{
+			text-indent: 3%;
+			opacity: 0;
+		}
+	}
+
+	&--small{
+		height: 32px;
+	}
+
+	&--cloud-border{
+		border: 1px solid $cloud;
+	}
+	&--gray-border{
+		border: 1px solid rgba($cloud, 0.2);
+	}
+	&--black-placeholder{
+		color: $steel;
+
+		@include placeholder{
+			color: $steel;
+		}
+	}
+
+	&--black{
+		background-color: rgba($steel, 0.3);
+	}
+	&--dark{
+		background-color: rgba($steel, 0.6);
+	}
+	&--death{
+		background-color: rgba(0, 0, 0, 0.7)
+	}
+	&--gray{
+		background-color: rgba(#b6c1cc, 0.2);
+	}
+	&--light{
+		background-color: rgba($concrete, 0.1);
+	}
+	&--white{
+		background-color: white;
+
+		@extend .input--black-placeholder;
+	}
+	&--snow{
+		background-color: rgba(255, 255, 255, 0.6);
+
+		@extend .input--black-placeholder;
+	}
+}

@@ -1,0 +1,171 @@
+$_price_plan_shift: 12px;
+$_price_plan_width: 340px;
+$_price_plans_2_rows: 'max-width: 600px';
+.prices--01{
+	background-color: $stone;
+}
+.prices_container--01{
+	position: relative;
+
+	text-align: left;
+	
+	@media (#{$min_laptop}){
+		max-width: 1140px;
+	}
+}
+.prices__text_box--01{
+	max-width: calc(90% - #{$_price_plan_width * 2});
+
+	@media (#{$min_laptop}){
+		position: absolute;
+		left: $container_side_margin;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@media (#{$max_laptop}){
+		max-width: 400px;
+
+		margin: auto auto 60px;
+
+		text-align: center;
+	}
+}
+.prices__description--01{
+	margin-bottom: 65px;
+}
+.prices__items_box--01{
+	transform: translateX($_price_plan_shift);
+
+	@media (#{$min_laptop}){
+		float: right;
+	}
+	@media (#{$max_laptop}){
+		margin: auto;
+	}
+	@media (#{$_price_plans_2_rows}){
+		transform: none;
+	}
+}
+.prices__item--01{
+	vertical-align: middle;
+
+	width: $_price_plan_width;
+
+	transform: translateX(-$_price_plan_shift);
+	padding: 25px 35px 40px;
+
+	border-radius: 12px;
+	background-color: #ebebed;
+	
+	@media (#{$max_tablets}){
+		width: auto;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media (#{$_price_plans_2_rows}){
+		width: 100%;
+
+		padding-left: 35px;
+		padding-right: 35px;
+
+		transform: none;
+
+		margin-bottom: 15px;
+	}
+}
+.prices__item--accent--01{
+	position: relative;
+	z-index: 1;
+
+	padding: 45px 15px 60px;
+
+	transform: none;
+
+	background-color: white;
+	box-shadow: 10px 17.3px 40px rgba(99, 117, 138, 0.15);
+
+	@media (#{$max_tablets}){
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media (#{$_price_plans_2_rows}){
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
+.prices__item__title--01{
+	@include font_loader($montserrat, 3, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 32px;
+}
+.prices__item__price--01{
+	@include font_loader($montserrat, 7, 'n');
+
+	display: block;
+
+	max-width: 63px;
+	height: 28px;
+
+	margin: auto auto 30px;
+	padding: 0 10px;
+
+	border: 1px solid rgba($steel, 0.3);
+	border-radius: 28px;
+
+	line-height: 27px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.prices__item__price_info--01{
+	display: block;
+
+	max-width: 50%;
+
+	margin: auto auto 30px;
+	padding-bottom: 35px;
+
+	color: $concrete;
+	font-size: 16px;
+
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+
+		width: 60px;
+		height: 1px;
+
+		background-color: $cloud;
+	}
+}
+.prices__item__features_list--01{
+	margin-bottom: 60px;
+
+	.prices__item--accent--01 &{
+		margin-bottom: 90px;
+	}
+}
+.prices__offer_text--01{
+	display: block;
+
+	margin-bottom: 5px;
+
+	font-size: 12px;
+	color: $concrete;
+}
+.prices__offer_link--01{
+	font-size: 13px;
+	color: $sky;
+	text-decoration: underline;
+
+	&:hover, &:focus, &:active, &:visited{
+		color: $sky;
+	}
+}

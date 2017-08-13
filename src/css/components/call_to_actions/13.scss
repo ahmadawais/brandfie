@@ -1,0 +1,39 @@
+.call_to_action--13{
+	text-align: center;
+
+	background-color: $sky;
+
+	padding-bottom: 100px;
+
+	@media (#{$max_phones}){
+		padding-bottom: 70px;
+	}
+}
+.call_to_action__title--13{
+	color: white;
+}
+.call_to_action__text--13{
+	margin-bottom: 50px;
+
+	color: white;
+}
+.call_to_action__input_box--13{
+	position: relative;
+
+	max-width: 470px;
+
+	padding-right: 30px;
+	margin: auto;
+}
+.call_to_action__input--13{
+	width: 100%;
+}
+.call_to_action__button--13{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	@media (#{$max_phones}){
+		min-width: 120px;
+	}
+}

@@ -1,0 +1,43 @@
+.features--03{
+	padding-top: 130px;
+	padding-bottom: 120px;
+
+	@media (#{$max_phones}){
+		padding: 50px 0;
+	}
+}
+.features__title_box--03{
+	margin-bottom: 100px;
+}
+.features__title--03{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 44px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.features__description--03{
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -40px;
+		margin: auto;
+
+		width: 80px;
+		height: 2px;
+
+		background-color: $cloud;
+	}
+}
+.features__item--03{
+	margin-bottom: 30px;
+}

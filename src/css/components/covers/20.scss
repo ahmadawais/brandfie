@@ -1,0 +1,50 @@
+//20 cover specific styles
+.cover--20{
+	@media (#{$max_phones}){
+		height: auto;
+		min-height: 100vh;
+
+		padding-bottom: 30px;
+	}
+}
+.cover__content_box--20{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-40%); //not centered actually
+	top: 50%;
+
+	text-align: center;
+}
+.cover__tag_button--20{
+	margin-bottom: 20px;
+}
+.cover__title--20{
+	margin-bottom: 110px;
+
+	@media (#{$max_tablets}){
+		margin-bottom: 70px;
+	}
+	@media (#{$max_phones}){
+		margin-bottom: 35px;
+	}
+}
+.cover__title_text--20{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 44px;
+	letter-spacing: 0.03em;
+	color: white;
+
+	@media (#{$max_tablets}){
+		font-size: 35px;
+	}
+	@media (#{$max_phones}){
+		font-size: 30px;
+
+		br{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+//01 cover specific styles
+.cover--01{
+	overflow: hidden;
+
+	background-color: #fafafa;
+
+	text-align: center;
+}
+.cover__content_box--01{
+	margin-top: 115px;
+}
+.cover__title--01{
+	position: relative;
+	z-index: 1;
+}
+.cover__title_text--01{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 38px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 29px;
+	}
+}
+.cover__description_box--01{
+	position: relative;
+	z-index: 1;
+
+	margin-top: 40px;
+}
+.cover__description_text--01{
+	@include font_loader($playfair, 4, 'n');
+
+	display: inline-block;
+
+	max-width: 480px;
+
+	color: $steel;
+	font-size: 18px;
+	line-height: 1.8;
+}
+.cover__pic_box--01{
+	margin-top: -30px;
+
+	@media (#{$max_phones}){
+		margin-top: 0;
+	}
+}
+.cover__pic--01{
+	width: 100%;
+}

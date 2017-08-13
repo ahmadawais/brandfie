@@ -1,0 +1,46 @@
+.call_to_action--12{
+	padding: 100px 0 120px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	text-align: center;
+
+	@media (#{$max_tablets}){
+		padding: 50px 0 70px;
+	}
+}
+.call_to_action__link--12{
+	@include font_loader($montserrat, 4, 'n');
+
+	opacity: 0.6;
+
+	font-size: 13px;
+	color: #feffff;
+	text-decoration: underline;
+	letter-spacing: 0.05em;
+
+	transition: opacity 0.4s ease;
+
+	&:hover, &:focus, &:active, &:visited{
+		opacity: 1;
+
+		color: #feffff;
+	}
+
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+
+		right: -12px;
+		top: 6px;
+
+		width: 5px;
+		height: 7px;
+
+		background: url(#{$icons_path}i--arrow--right--white--small.svg) no-repeat center / 100% auto;
+	}
+}

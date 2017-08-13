@@ -1,0 +1,17 @@
+.about--04{
+	padding-top: 100px;
+
+	@media (#{$max_phones}){
+		padding-top: 50px;
+	}
+}
+.about_content_box--04{
+	margin: auto;
+
+	max-width: 620px;
+
+	text-align: center;
+}
+.about__text--04{
+	margin-bottom: 0;
+}

@@ -1,0 +1,38 @@
+.prices--03{
+	background-color: $steel;
+}
+.prices__item--03{
+	width: 255px;
+
+	margin: 0 15px;
+
+	border-radius: 5px;
+	background-color: white;
+
+	@media (#{$max_laptop}){
+		margin: 0 $container_side_margin 0 0;
+		float: left;
+
+		width: calc(25% - 11.5px);
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	@media (#{$max_tablets}){
+		width: calc(50% - 7.5px);
+
+		margin-bottom: $container_side_margin;
+
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+	}
+	@media (#{$max_phones}){
+		width: 100%;
+		margin: 0 0 $container_side_margin;
+	}
+}
+.prices__item--accent--03{
+	background-color: $sky;
+}

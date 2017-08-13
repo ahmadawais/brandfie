@@ -1,0 +1,36 @@
+.prices--04{
+}
+.prices__item--04{
+	width: 300px;
+
+	border-radius: 7px;
+	border: 1px solid $cloud;
+
+	@media (#{$max_tablets--landscape}){
+		width: calc(33% - 10px);
+		float: left;
+	}
+	@media (#{$max_tablets}){
+		margin: 0 0 20px;
+	}
+	@media (#{$_one_row_prices}){
+		display: block;
+
+		width: 100%;
+
+		margin: 0 auto $container_side_margin;
+	}
+}
+.prices__item--accent--04{
+	margin: 0 50px;
+
+	background-color: $sky;
+	border: none;
+
+	@media (max-width: 1050px){
+		margin: 0 $container_side_margin;
+	}
+	@media (#{$_one_row_prices}){
+		margin: 0 auto $container_side_margin;
+	}
+}

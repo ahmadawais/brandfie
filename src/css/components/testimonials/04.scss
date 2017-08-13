@@ -1,0 +1,136 @@
+.testimonials--04{
+	background-color: $stone;
+}
+.testimonials__arrows_box--04{
+	max-width: 968px;
+
+	@media (#{$max_phones}){
+		display: none;
+	}
+}
+.testimonials__box--04,
+.testimonials__photos_box--04{
+	max-width: 700px;
+
+	margin: auto;
+}
+.testimonials__photos_box--04{
+	margin-bottom: 10px;
+}
+.testimonials__item_photo_box--04{
+	opacity: 0.6;
+
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	transform-origin: center;
+	transition: opacity 0.4s ease, transform 0.6s ease;
+
+	&.slick-center{
+		opacity: 1;
+
+		transform: scale(1.76);
+
+		.testimonials__item_photo--04{
+			box-shadow: 0 4.5px 17px rgba(36, 37, 38, 0.35);
+		}
+
+		@media (#{$max_phones}){
+			transform: scale(1.5);
+		}
+	}
+	@media (#{$max_phones}){
+		opacity: 1;
+	}
+}
+.testimonials__item_photo--04{
+	height: 79px;
+	width: 79px;
+
+	transition: box-shadow 0.4s ease;
+}
+.testimonials__item--04{
+	margin: 0 10px;
+	padding: 0 20px 20px;
+
+	@media (#{$max_phones}){
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.testimonials__item_text--04{
+	padding-top: 0;
+	margin-bottom: 40px;
+
+	font-size: 16px;
+	letter-spacing: 0.05em;
+
+	&:before{
+		content: none;
+	}
+}
+.testimonials__arrows_box--04{
+	height: 46px;
+}
+.testimonials__arrow--04{
+	height: 46px;
+	width: 46px;
+
+	&:after,
+	&:before{
+		height: 100%;
+		width: 100%;
+	}
+	&:before{
+		opacity: 1;
+	}
+	&:after{
+		opacity: 0;
+	}
+
+	&:hover{
+		&:before{
+			opacity: 0;
+		}
+		&:after{
+			opacity: 1;
+		}
+
+		box-shadow: 1px 1.7px 15px rgba(188,198,208,0.3);
+	}
+
+	&--left{
+		&:hover{
+			background-color: white;
+		}
+
+		&:before{
+			background: url(#{$icons_path}i--arrow--circle--black--left.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			height: 13px;
+			width: 8px;
+
+			background: url(#{$icons_path}i--arrow--circle--black--left--hover.svg) no-repeat center / 100% auto;
+
+			transform: translateX(-1px) translateY(1px);
+		}
+	}
+	&--right{
+		&:hover{
+			background-color: white;
+		}
+
+		&:before{
+			background: url(#{$icons_path}i--arrow--circle--black--right.svg) no-repeat center / 100% auto;
+		}
+		&:after{
+			height: 13px;
+			width: 8px;
+
+			background: url(#{$icons_path}i--arrow--circle--black--right--hover.svg) no-repeat center / 100% auto;
+
+			transform: translateX(1px) translateY(1px);
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.testimonials--01{
+	max-width: 808px;
+}
+.testimonials__title--01{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 10px;
+	color: $steel;
+	text-transform: uppercase;
+}
+.testimonials__arrows_box--01{
+	height: 28px;
+}
+.testimonials__arrow--01{
+	height: 28px;
+	width: 28px;
+
+	border: 1px solid #b6c1cc;
+	background-color: white;
+
+	&:after,
+	&:before{
+		height: 8px;
+		width: 4px;
+
+		margin: auto;
+	}
+	&:after{
+		opacity: 1;
+	}
+
+	&:hover{
+		box-shadow: 0.5px 0.9px 17px rgba(255, 255, 255, 0.51);
+	}
+
+	&--left{
+		//&:before{
+		//	background: url(#{$icons_path}i--small-arrow--left.svg) no-repeat center / 100% auto;
+		//}
+		&:after{
+			background: url(#{$icons_path}i--small-arrow--black--left.svg) no-repeat center / 100% auto;
+		}
+	}
+	&--right{
+		//&:before{
+		//	background: url(#{$icons_path}i--small-arrow--right.svg) no-repeat center / 100% auto;
+		//}
+		&:after{
+			background: url(#{$icons_path}i--small-arrow--black--right.svg) no-repeat center / 100% auto;
+			transform: translateX(1px); //makes it visually centered
+		}
+	}
+}

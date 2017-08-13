@@ -1,0 +1,29 @@
+.about--05{
+	min-height: 1px;
+
+	padding: 70px 0 100px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		padding: 50px 0 70px;
+	}
+}
+.about__title--05{
+	margin-bottom: 70px;
+
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		margin-bottom: 50px;
+
+		font-size: 34px;
+	}
+}
+.about__text--05{
+	width: 100%;
+
+	margin: auto;
+
+	font-size: 13px;
+}

@@ -1,0 +1,144 @@
+$_menu_left_margin: 50px;
+.menu{
+	position: fixed;
+	overflow: auto;
+	right: -100%;
+	top: 0;
+	z-index: 300;
+
+	width: 30%;
+	height: 100%;
+	min-width: 320px;
+
+	padding-bottom: 30px;
+
+	background-color: $sky;
+
+	transition: right 0.7s ease;
+
+	&.state-opened{
+		right: 0;
+	}
+
+	@media (#{$max_phones}){
+		transition-duration: 0.4s;
+	}
+}
+.menu__box{
+	padding-left: $_menu_left_margin;
+	padding-right: $_menu_left_margin;
+
+	@media (#{$max_phones}){
+		margin-top: 40px;
+		padding-left: $container_side_margin;
+		padding-right: $container_side_margin;
+	}
+	@media (#{$min_phones}){
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.menu__closer{
+	@include font_loader($montserrat, 4, 'n');
+
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+
+	margin: 0 0 0 $_menu_left_margin;
+	padding-left: 30px;
+
+	color: white;
+	font-size: 14px;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		top: 0;
+
+		width: 15px;
+
+		background: url(#{$icons_path}i--cross--white.svg) no-repeat center / 100% auto;
+	}
+
+	@media (#{$max_desktop}){
+		right: $container_side_margin;
+	}
+	@media (#{$max_phones}){
+		top: 40px;
+	}
+}
+.menu__title{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin: 0 0 20px;
+
+	color: white;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.menu__list{
+	@include clearfix;
+	@include clear_list;
+
+	display: inline-block;
+
+	margin-left: 0;
+	margin-bottom: 44px;
+	padding-bottom: 20px;
+
+	border-bottom: 2px solid white;
+
+	@media (#{$max_tablets}){
+		display: block;
+	}
+}
+.menu__item{
+	margin-bottom: 20px;
+}
+.menu__link,
+.menu__phone_link{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 20px;
+	letter-spacing: 0.05em;
+
+	&, &:hover, &:focus{
+		color: white;
+		text-decoration: none;
+	}
+}
+.menu__phone_link{
+	display: block;
+
+	margin: 0 0 50px 0;
+	padding-left: 30px;
+
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		top: 0;
+
+		width: 20px;
+
+		background: url(#{$icons_path}i--phone-call.svg) no-repeat center / 100% auto;
+	}
+}
+.menu__about_text{
+	@include font_loader($montserrat, 4, 'n');
+
+	font-size: 13px;
+	color: rgba(white, 0.65);
+	line-height: 1.4;
+
+	width: 80%;
+}

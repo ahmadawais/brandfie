@@ -1,0 +1,56 @@
+//04 cover specific styles
+.cover__content_box--04{
+	position: absolute;
+	left: $container_side_margin;
+	right: $container_side_margin;
+	margin: auto;
+	transform: translateY(-40%); //not centered actually
+	top: 50%;
+}
+.cover__container--04{
+	position: relative;
+
+	height: 100%;
+}
+.cover__title--04{
+	max-width: 750px;
+
+	margin: auto;
+
+	text-align: center;
+}
+.cover__title_text--04{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 50px;
+	letter-spacing: 0.03em;
+	color: white;
+
+	@media (#{$max_tablets}){
+		font-size: 40px;
+	}
+	@media (#{$max_phones}){
+		font-size: 30px;
+	}
+	@media (max-width: 800px){
+		br{
+			display: none;
+		}
+	}
+}
+.cover__description_box--04{
+	margin-top: 50px;
+
+	text-align: center;
+}
+.cover__description_text--04{
+	@include font_loader($playfair, 4, 'n');
+
+	display: inline-block;
+
+	max-width: 350px;
+
+	color: rgba(white, 0.67);
+	font-size: 17px;
+}
+

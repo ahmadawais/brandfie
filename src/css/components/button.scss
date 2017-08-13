@@ -1,0 +1,263 @@
+.button{
+	@include clear_link;
+	@include font_loader($montserrat, 7, 'n');
+
+	display: inline-block;
+
+	min-width: 150px;
+	padding: 0 10px;
+	height: $button_height;
+	line-height: $button_height;
+
+	border-radius: $button_height;
+
+	font-size: 10px;
+	letter-spacing: 0.065em;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	text-align: center;
+
+	transition: all 0.3s ease;
+
+	&:hover, &:focus, &:active, &:visited{
+		text-decoration: none;
+	}
+
+	&--gray{
+		background-color: $stone;
+	}
+	&--black{
+		background-color: $steel;
+
+		color: white;
+
+		&:hover, &:focus, &:active, &:visited{
+			color: white;
+		}
+		&:hover{
+			background-color: rgba($steel, 0.8);
+		}
+	}
+	&--white{
+		background-color: white;
+
+		&:hover{
+			background-color: $sky;
+			color: white;
+		}
+	}
+	&--blue{
+		background-color: $sky;
+		color: white;
+
+		&:hover, &:focus, &:active, &:visited{
+			color: white;
+		}
+		&:hover{
+			background-color: rgba($sky, 0.8);
+		}
+	}
+	&--border-black{
+		border: 1px solid $steel;
+
+		color: $steel;
+
+		&:hover{
+			background-color: $steel;
+			color: white;
+		}
+	}
+	&--border-white{
+		border: 1px solid white;
+
+		color: white;
+
+		&:hover, &:focus, &:active, &:visited{
+			color: white;
+		}
+		&:hover{
+			background-color: white;
+			color: $steel;
+		}
+	}
+	&--border-blue{
+		border: 1px solid $sky;
+
+		&:hover{
+			background-color: $sky;
+			color: white;
+		}
+	}
+	&--border-fat{
+		border-width: 2px;
+
+		line-height: 40px;
+	}
+	&--icon-apple{
+		padding-left: 25px;
+		position: relative;
+
+		&:before,
+		&:after{
+			content: "";
+			position: absolute;
+			left: 22px;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+
+			width: 13px;
+			height: 16px;
+
+			transition: opacity .4s ease;
+		}
+		&:before{
+			background: url(#{$icons_path}i--apple--white.svg) no-repeat center / 13px 16px;
+		}
+		&:after{
+			background: url(#{$icons_path}i--apple--black.svg) no-repeat center / 13px 16px;
+		}
+		&:after{
+			opacity: 0;
+		}
+
+		&.button--border-white, &.button--white{
+			&:hover{
+				&:before{
+					opacity: 0;
+				}
+				&:after{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&--icon-apple--black{
+		@extend .button--icon-apple;
+
+		&:before{
+			background: url(#{$icons_path}i--apple--black.svg) no-repeat center / 13px 16px;
+		}
+		&:after{
+			background: url(#{$icons_path}i--apple--white.svg) no-repeat center / 13px 16px;
+		}
+	}
+	&--blue-shadow{
+		box-shadow: 4px 6.9px 16px rgba(27, 139, 249, 0.4);
+
+		&:hover{
+			box-shadow: 4px 6.9px 16px rgba(27, 139, 249, 0.6);
+		}
+	}
+	&--gray-shadow{
+		box-shadow: 4px 6.9px 16px rgba(99, 117, 138, 0.1);
+
+		&:hover{
+			box-shadow: 4px 6.9px 16px rgba(99, 117, 138, 0.3);
+		}
+	}
+	&--black-shadow{
+		box-shadow: 4px 6.9px 16px rgba(0, 0, 0, 0.2);
+
+		&:hover{
+			box-shadow: 4px 6.9px 16px rgba(0, 0, 0, 0.35);
+		}
+	}
+	&--dark-shadow{
+		box-shadow: 2px 3.5px 20px rgba(50, 65, 87, 0.8);
+
+		&:hover{
+			box-shadow: 2px 3.5px 20px rgba(50, 65, 87, 0.9);
+		}
+	}
+
+	&--small-radius{
+		border-radius: 4px;
+	}
+
+	&--small{
+		height: 34px;
+		line-height: 31px;
+		min-width: 124px;
+
+		font-size: 12px;
+	}
+	&--extra-small{
+		height: 20px;
+		line-height: 20px;
+		min-width: 60px;
+
+		font-size: 9px;
+	}
+
+	&--round{
+		border-radius: 50%;
+		height: 42px;
+		width: 42px;
+		min-width: 42px;
+	}
+
+	&--arrow-down{
+		position: relative;
+
+		&:hover{
+			transform: translateY(3px);
+		}
+
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+
+			width: 14px;
+			height: 8px;
+		
+			background: url(#{$icons_path}i--arrow--white--down.svg) no-repeat center / 100% auto;
+		}
+
+		&.button--white{
+			&:before{
+				background: url(#{$icons_path}i--arrow--black--down.svg) no-repeat center / 100% auto;
+			}
+
+			&:hover{
+				background-color: white;
+			}
+		}
+	}
+	&--play-icon{
+		position: relative;
+
+		&:before{
+			content: "";
+			position: absolute;
+			left: 6px;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+
+			width: 21px;
+			height: 26px;
+
+			background: url(#{$icons_path}i--icon-play.svg) no-repeat center / 100% auto;
+		}
+	}
+}
+
+.button--store{
+	display: inline-block;
+
+	margin: 0 10px;
+
+	width: 135px;
+}
+.button__image{
+	width: 100%;
+}

@@ -1,0 +1,133 @@
+//16 cover specific styles
+.cover--16{
+	overflow: hidden;
+
+	background-color: #0cb3f8;
+
+	@media (#{$max_phones}){
+		height: auto;
+
+		padding-top: 80px;
+		padding-bottom: 60px;
+
+		text-align: center;
+	}
+}
+.cover__container--16{
+	z-index: 1;
+	position: relative;
+
+	height: 100%;
+}
+.cover__pic_box--16{
+	position: absolute;
+	height: 80%;
+
+	right: $container_side_margin;
+	top: 58%;
+	transform: translateY(-50%);
+
+	@media (#{$max_tablets}){
+		top: 50%;
+		height: 500px;
+		right: 0;
+	}
+	@media (#{$max_phones}){
+		transform: none;
+		position: static;
+
+		height: 240px;
+
+		margin-bottom: 40px;
+	}
+}
+.cover__img--16{
+	height: 100%;
+}
+.cover__text_box--16{
+	position: absolute;
+	left: $container_side_margin;
+	top: 53%;
+	transform: translateY(-50%);
+
+	@media (#{$max_tablets}){
+		top: 50%;
+	}
+	@media (#{$max_phones}){
+		position: static;
+		transform: none;
+		padding-bottom: 50px;
+	}
+}
+.cover__link--16{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-left: 40px;
+
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+
+	&:hover{
+		color: white;
+		text-decoration: none;
+	}
+}
+.cover__title--16{
+	margin-bottom: 35px;
+}
+.cover__title_text--16{
+	@include font_loader($montserrat, 7, 'n');
+
+	color: white;
+	font-size: 70px;
+
+	@media (#{$max_tablets}){
+		font-size: 60px;
+	}
+	@media (#{$max_phones}){
+		font-size: 44px;
+	}
+}
+.cover__description_box--16{
+	margin-bottom: 70px;
+}
+.cover__description_text--16{
+	@include font_loader($playfair, 4, 'i');
+
+	display: inline-block;
+
+	max-width: 350px;
+
+	font-style: italic;
+	color: white;
+	font-size: 18px;
+}
+.cover__footer--16{
+	height: 60px;
+	line-height: 60px;
+
+	background-color: white;
+}
+.cover__footer_left_box--16{
+	@extend .container;
+}
+.cover__footer_button--16{
+	position: relative;
+	z-index: 1;
+	top: -2px;//to make it visually look centered
+}
+.cover__footer_text--16{
+	@include font_loader($playfair, 7, 'i');
+
+	margin-left: 30px;
+
+	font-size: 13px;
+	font-style: italic;
+
+	@media (#{$max_phones}){
+		margin-left: 10px;
+
+		font-size: 11px;
+	}
+}

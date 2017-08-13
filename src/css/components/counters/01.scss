@@ -1,0 +1,18 @@
+.counter--01{
+	padding: 70px 0 60px;
+
+	background-color: $sky;
+}
+.counter__item--01{
+	padding: 0 100px;
+
+	@media (#{$max_laptop}){
+		padding: 0 50px;
+	}
+	@media (#{$_charts_smaller}){
+		padding: 0;
+	}
+}
+.counter__title--01{
+	margin-bottom: 10px;
+}

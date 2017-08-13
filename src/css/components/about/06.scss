@@ -1,0 +1,146 @@
+.about--06{
+	position: relative;
+	min-height: initial;
+
+	padding: 150px 0 140px;
+
+	text-align: center;
+
+	@media (#{$max_tablets}){
+		padding-bottom: 100px;
+
+		position: relative;
+
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+
+			background-color: rgba(white, 0.9);
+		}
+	}
+	@media (#{$max_phones}){
+		padding-top: 50px;
+		padding-bottom: 30px;
+
+		background-position: right center;
+		background-size: 200%;
+	}
+}
+.about__container--06{
+	position: relative;
+}
+.about__title_box--06{
+	margin-bottom: 85px;
+
+	@media (#{$min_phones}){
+		text-align: left;
+	}
+
+	@media (#{$max_phones}){
+		margin-bottom: 40px;
+	}
+}
+.about__description--06{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: inline-block;
+
+	max-width: 500px;
+
+	font-size: 16px;
+	color: $concrete;
+}
+.about__box--06{
+	display: inline-block;
+
+	max-width: 240px;
+	padding-top: 40px;
+}
+.about__row--06{
+	margin-bottom: 85px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.about__feature_item--06{
+	margin-bottom: 85px;
+
+	@media (#{$min_phones}){
+		text-align: left;
+	}
+}
+.about__item_icon--06{
+	position: relative;
+	display: inline-block;
+
+	height: 40px;
+	width: 40px;
+
+	margin-bottom: 27px;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		margin: auto;
+
+		width: 100%;
+		height: 100%;
+	}
+}
+.about__feature_item_title--06{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 10px;
+
+	font-size: 13px;
+	color: $steel;
+	text-transform: uppercase;
+	letter-spacing: 0.085em;
+}
+.about__item_text--06{
+	@include font_loader($montserrat, 4, 'n');
+
+	display: block;
+
+	margin-left: 0;
+	margin-bottom: 15px;
+	max-width: 400px;
+
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	color: $concrete;
+
+	@media (#{$min_phones}){
+		width: 90%;
+	}
+	@media (#{$max_phones}){
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.about__img_box--06{
+	display: inline-block;
+	vertical-align: top;
+
+	max-width: 330px;
+
+	margin: 0 60px;
+
+	@media (#{$max_tablets}){
+		display: block;
+
+		margin: auto;
+	}
+}
+.about__img--06{
+	width: 100%;
+}

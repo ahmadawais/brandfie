@@ -1,0 +1,28 @@
+.call_to_action__title--02{
+	margin-bottom: 70px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-bottom: 30px;
+
+		br{
+			display: none;
+		}
+	}
+}
+.call_to_action__form--02{
+	text-align: center;
+}
+.call_to_action__input_box--02{
+	margin-bottom: 27px;
+}
+.call_to_action__input--02{
+	width: 100%;
+	max-width: 225px;
+	margin: 0 5px 10px;
+}
+.call_to_action__button--02{
+	width: 100%;
+	max-width: 225px;
+}

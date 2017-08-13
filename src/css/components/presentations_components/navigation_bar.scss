@@ -1,0 +1,68 @@
+//this component is used for easier navigation and is not a part of the tool. Yet, you still can use it in your projects if you want.
+.page_wrapper--presentation-navbar{
+	@media (#{$min_tablets}){
+		padding-top: 40px;
+	}
+}
+.navigation_bar{
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	background-color: $steel;
+
+	@media (#{$max_tablets}){
+		display: none;
+	}
+}
+.navigation_bar__links_box{
+	display: none;
+
+	padding-bottom: 40px;
+}
+.navigation_bar__toggler_box{
+	padding: 10px 15px;
+}
+.navigation_bar__items_list{
+	@include clear_list;
+
+	vertical-align: top;
+	display: inline-block;
+
+	margin: 0 50px 0 0;
+}
+.navigation_bar__item{
+	display: block;
+
+	margin-bottom: 5px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&--last{
+		margin-bottom: 30px;
+	}
+}
+.navigation_bar__link{
+	@include font_loader($montserrat, 7, 'n');
+
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.085em;
+
+	color: rgba(white, 0.7);
+
+	transition: color 0.4s ease;
+
+	&:hover, &:focus, &:active, &:visited{
+		text-decoration: none;
+		color: white;
+	}
+
+	@media (max-width: 1366px){
+		font-size: 9px;
+	}
+}

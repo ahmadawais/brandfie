@@ -1,0 +1,35 @@
+.call_to_action--11{
+	text-align: center;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.call_to_action__text--11{
+	margin-bottom: 50px;
+
+	color: white;
+}
+.call_to_action__input_box--11{
+	position: relative;
+
+	max-width: 470px;
+
+	padding-right: 30px;
+	margin: auto auto 55px;
+}
+.call_to_action__input--11{
+	width: 100%;
+}
+.call_to_action__button--11{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	@media (#{$max_phones}){
+		min-width: 120px;
+	}
+}
+.call_to_action__social_item--11{
+	margin: 0 5px;
+}

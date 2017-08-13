@@ -1,0 +1,44 @@
+.features--07{
+	padding-top: 60px;
+	padding-bottom: 25px;
+
+	@media (#{$max_phones}){
+		padding: 50px 0 20px;
+	}
+}
+.features__item--07{
+	padding-left: 65px;
+	margin-bottom: 85px;
+
+	text-align: left;
+}
+.features__title_box--07{
+	margin-bottom: 90px;
+}
+.features__item_icon_circle--07{
+	position: absolute;
+	top: 0;
+	left: $container_side_margin;
+
+	height: 24px;
+	width: 24px;
+
+	background-color: transparent;
+}
+.features__title--07{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 44px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.features__item_text--07{
+	margin-left: 0;
+
+	width: 90%;
+}

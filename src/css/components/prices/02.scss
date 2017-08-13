@@ -1,0 +1,38 @@
+.prices--02{
+	background-color: $stone;
+}
+.prices__item--02{
+	width: 300px;
+
+	border-radius: 7px;
+	
+	@media (#{$max_tablets--landscape}){
+		width: calc(50% - 135px);
+		float: left;
+	}
+	@media (#{$max_tablets}){
+		margin: 0 0 20px;
+	}
+	@media (#{$_one_row_prices}){
+		display: block;
+
+		width: 100%;
+
+		margin: 0 auto $container_side_margin;
+	}
+}
+.prices__item--accent--02{
+	margin: 0 50px;
+
+	background-color: white;
+	box-shadow: 5px 8.7px 40px rgba(99, 117, 138, 0.3);
+
+	@media (#{$max_tablets--landscape}){
+		width: 270px;
+
+		margin: 0;
+	}
+	@media (#{$_one_row_prices}){
+		width: 100%;
+	}
+}

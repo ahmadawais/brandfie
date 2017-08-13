@@ -1,0 +1,43 @@
+.about--03{
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 50%;
+
+		background-color: white;
+	}
+
+	@media (#{$max_tablets}){
+		min-height: 1px;
+
+		padding: 70px 0;
+
+		text-align: center;
+
+		&:before{
+			right: 0;
+
+			background-color: rgba(white, 0.8);
+		}
+	}
+}
+.about_row--03{
+	@media (#{$max_tablets}){
+		position: static;
+
+		transform: none;
+
+		padding: 40px 0 60px;
+	}
+}
+.about_content_box--03{
+	@media (#{$max_tablets}){
+		margin: auto;
+	}
+}

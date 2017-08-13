@@ -1,0 +1,156 @@
+// == START OF BOOTSTRAP CSS ==
+@import "../../bower_components/bootstrap/scss/bootstrap";
+// == END OF BOOTSTRAP CSS ==
+
+// == START OF SLICK CSS ==
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// == START OF SLICK CSS ==
+
+// == START OF LIGHTBOX CSS ==
+@import "../../bower_components/lightbox2/src/css/lightbox.scss";
+// == START OF LIGHTBOX CSS ==
+
+// == START OF PHOENIX CSS ==
+@import "abstracts/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/icons";
+
+@import "base/base";
+
+@import "components/input";
+@import "components/button";
+@import "components/dropdown";
+@import "components/social";
+@import "components/overlay";
+@import "components/menu/common"; //styles for all side menus
+@import "components/menu/02--desktop"; //styles for the 02--desktop menu
+@import "components/popup";
+
+@import "layout/headers/common";
+
+@import "components/partners";
+
+@import "components/call_to_actions/common";
+@import "components/call_to_actions/01";
+@import "components/call_to_actions/02";
+@import "components/call_to_actions/03";
+@import "components/call_to_actions/04";
+@import "components/call_to_actions/05";
+@import "components/call_to_actions/06";
+@import "components/call_to_actions/07";
+@import "components/call_to_actions/08";
+@import "components/call_to_actions/09";
+@import "components/call_to_actions/10";
+@import "components/call_to_actions/11";
+@import "components/call_to_actions/12";
+@import "components/call_to_actions/13";
+@import "components/call_to_actions/14";
+@import "components/call_to_actions/15";
+@import "components/call_to_actions/16";
+@import "components/call_to_actions/17";
+@import "components/call_to_actions/18";
+
+@import "components/features/common";
+@import "components/features/01";
+@import "components/features/02";
+@import "components/features/03";
+@import "components/features/04";
+@import "components/features/05";
+@import "components/features/06";
+@import "components/features/07";
+@import "components/features/08";
+@import "components/features/09";
+@import "components/features/10";
+@import "components/features/11";
+@import "components/features/12";
+
+@import "components/testimonials/common";
+@import "components/testimonials/01";
+@import "components/testimonials/02";
+@import "components/testimonials/03";
+@import "components/testimonials/04";
+@import "components/testimonials/05";
+@import "components/testimonials/06";
+
+@import "components/about/common";
+@import "components/about/01";
+@import "components/about/02";
+@import "components/about/03";
+@import "components/about/04";
+@import "components/about/05";
+@import "components/about/06";
+@import "components/about/07";
+@import "components/about/08";
+
+@import "components/contents/common";
+@import "components/contents/01";
+@import "components/contents/02";
+@import "components/contents/03";
+@import "components/contents/04";
+@import "components/contents/05";
+
+@import "components/team/common";
+@import "components/team/01";
+@import "components/team/02";
+@import "components/team/03";
+
+@import "components/works/common";
+@import "components/works/01";
+@import "components/works/02";
+@import "components/works/03";
+@import "components/works/04";
+
+@import "components/prices/common";
+@import "components/prices/01";
+@import "components/prices/02";
+@import "components/prices/03";
+@import "components/prices/04";
+
+@import "components/counters/common";
+@import "components/counters/01";
+@import "components/counters/02";
+@import "components/counters/03";
+
+@import "layout/footers/common";
+@import "layout/footers/01";
+@import "layout/footers/02";
+@import "layout/footers/03";
+@import "layout/footers/04";
+@import "layout/footers/05";
+@import "layout/footers/06";
+@import "layout/footers/07";
+
+@import "components/covers/common";
+@import "components/covers/01";
+@import "components/covers/02";
+@import "components/covers/03";
+@import "components/covers/04";
+@import "components/covers/05";
+@import "components/covers/06";
+@import "components/covers/07";
+@import "components/covers/08";
+@import "components/covers/09";
+@import "components/covers/10";
+@import "components/covers/11";
+@import "components/covers/12";
+@import "components/covers/13";
+@import "components/covers/14";
+@import "components/covers/15";
+@import "components/covers/16";
+@import "components/covers/17";
+@import "components/covers/18";
+@import "components/covers/19";
+@import "components/covers/20";
+@import "components/covers/21";
+
+@import "components/contacts/common";
+@import "components/contacts/01";
+@import "components/contacts/02";
+@import "components/contacts/03";
+@import "components/contacts/04";
+
+//this component is used for easier navigation and is not a part of the tool
+@import "components/presentations_components/navigation_bar";
+
+// == END OF PHOENIX CSS ==

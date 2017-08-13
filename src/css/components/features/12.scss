@@ -1,0 +1,138 @@
+.features--12{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+$_features_box_width: 400px;
+.features__container--12{
+	position: relative;
+}
+.features__box--12{
+	padding: 50px 80px;
+
+	background-color: $steel;
+
+	@media (#{$min_tablets}){
+		display: inline-block;
+		position: relative;
+
+		width: $_features_box_width;
+
+		&:after{
+			content: "";
+			position: absolute;
+
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			right: 0;
+			transform: translateX(98%);
+
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 9.5px 0 9.5px 8px;
+			border-color: transparent transparent transparent $steel;
+		}
+	}
+
+	@media (#{$max_tablets}){
+		padding-left: $container_side_margin;
+		padding-right: $container_side_margin;
+	}
+}
+.features__item_title--12{
+	color: white;
+}
+.features__item--12{
+	margin-bottom: 50px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.features__item_icon_circle--12{
+	border: 2px solid white;
+	background-color: transparent;
+}
+.features__item_text--12{
+	width: 100%;
+	max-width: 350px;
+}
+.features__content_box--12{
+	text-align: center;
+
+	@media (#{$min_tablets}){
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+
+		width: calc(100% - #{$_features_box_width} - #{$container_side_margin});
+	}
+}
+.features__content_wrapper--12{
+	margin: auto;
+
+	@media (#{$min_tablets}){
+		position: absolute;
+
+		top: 50%;
+		left: 0;
+		right: 0;
+
+		transform: translateY(-50%);
+	}
+	@media (#{$max_tablets}){
+		padding: 50px $container_side_margin 70px;
+	}
+}
+.features__logo_box--12{
+	height: 25px;
+
+	margin-bottom: 25px;
+
+	text-align: center;
+}
+.features__logo--12{
+	height: 100%;
+}
+.features__logo_title--12{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 18px;
+	color: white;
+	letter-spacing: 0.06em;
+}
+.features__logo_subtitle--12{
+	@include font_loader($montserrat, 4, 'n');
+
+	margin-bottom: 50px;
+
+	font-size: 14px;
+	color: white;
+}
+.features__title--12{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 30px;
+
+	font-size: 48px;
+	color: white;
+	line-height: 1.2;
+
+	@media (#{$max_tablets}){
+		font-size: 34px;
+	}
+}
+.features__description--12{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: block;
+	max-width: 330px;
+
+	margin: auto auto 45px;
+
+	font-size: 14px;
+	color: white;
+}

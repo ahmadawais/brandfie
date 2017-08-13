@@ -1,0 +1,41 @@
+.features--10{
+	padding-top: 60px;
+
+	background-color: $steel;
+
+	@media (#{$max_phones}){
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+}
+.features__item--10{
+	margin-bottom: 60px;
+}
+.features__item_icon_circle--10{
+	height: 35px;
+
+	background-color: transparent;
+}
+.features__item_title--10{
+	color: white;
+}
+.features__item_text--10{
+	display: block;
+	margin: auto auto 20px;
+
+	max-width: 350px;
+
+	color: rgba(white, 0.6);
+	font-size: 13px;
+}
+.features__item_link--10{
+	color: white;
+
+	&:before{
+		background-color: white;
+	}
+
+	&:hover, &:focus, &:active, &:visited{
+		color: white;
+	}
+}

@@ -1,0 +1,58 @@
+.counter--02{
+	min-height: 1px;
+
+	padding: 70px 0 150px;
+
+	text-align: center;
+
+	background-color: $stone;
+
+	@media (#{$max_phones}){
+		padding: 50px 0 70px;
+	}
+}
+.counter__title--02{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 20px;
+
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		font-size: 36px;
+	}
+}
+.counter__description--02{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: block;
+
+	max-width: 470px;
+
+	margin: auto auto 75px;
+	padding-bottom: 40px;
+
+	color: $concrete;
+	font-size: 16px;
+
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		width: 80px;
+		height: 2px;
+
+		margin: auto;
+
+		background-color: $cloud;
+	}
+
+	@media (#{$_charts_smaller}){
+		margin-bottom: 45px;
+	}
+}

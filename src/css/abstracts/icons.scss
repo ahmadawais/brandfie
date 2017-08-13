@@ -1,0 +1,169 @@
+@mixin play-icon{
+	background: url(#{$icons_path}i--play-box.svg) no-repeat center / 100% auto;
+}
+@mixin play-icon--blue{
+	background: url(#{$icons_path}i--play-box--blue.svg) no-repeat center / 100% auto;
+}
+@mixin play-icon--gray{
+	background: url(#{$icons_path}i--play-box--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin star-icon{
+	background: url(#{$icons_path}i--star.svg) no-repeat center / 100% auto;
+}
+@mixin star-icon--blue{
+	background: url(#{$icons_path}i--star--blue.svg) no-repeat center / 100% auto;
+}
+@mixin star-icon--gray{
+	background: url(#{$icons_path}i--star--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin code-icon{
+	background: url(#{$icons_path}i--code-block.svg) no-repeat center / 100% auto;
+}
+@mixin code-icon--blue{
+	background: url(#{$icons_path}i--code-block--blue.svg) no-repeat center / 100% auto;
+}
+@mixin code-icon--gray{
+	background: url(#{$icons_path}i--code-block--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin zip-icon{
+	background: url(#{$icons_path}i--zip.svg) no-repeat center / auto 100%;
+}
+@mixin zip-icon--blue{
+	background: url(#{$icons_path}i--zip--blue.svg) no-repeat center / auto 100%;
+}
+@mixin zip-icon--gray{
+	background: url(#{$icons_path}i--zip--gray.svg) no-repeat center / auto 100%;
+}
+
+@mixin zip-circle-icon{
+	background: url(#{$icons_path}i--zip--circle.svg) no-repeat center / 100% auto;
+}
+@mixin zip-circle-icon--blue{
+	background: url(#{$icons_path}i--zip--circle--blue.svg) no-repeat center / 100% auto;
+}
+@mixin zip-circle-icon--gray{
+	background: url(#{$icons_path}i--zip--circle--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin tune-icon{
+	background: url(#{$icons_path}i--tune.svg) no-repeat center / 100% auto;
+}
+@mixin tune-icon--blue{
+	background: url(#{$icons_path}i--tune--blue.svg) no-repeat center / 100% auto;
+}
+@mixin tune-icon--gray{
+	background: url(#{$icons_path}i--tune--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin trophy-icon{
+	background: url(#{$icons_path}i--trophy.svg) no-repeat center / 100% auto;
+}
+@mixin trophy-icon--blue{
+	background: url(#{$icons_path}i--trophy--blue.svg) no-repeat center / 100% auto;
+}
+@mixin trophy-icon--gray{
+	background: url(#{$icons_path}i--trophy--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin speedometer-icon{
+	background: url(#{$icons_path}i--speedometer.svg) no-repeat center / 100% auto;
+}
+@mixin speedometer-icon--blue{
+	background: url(#{$icons_path}i--speedometer--blue.svg) no-repeat center / 100% auto;
+}
+@mixin speedometer-icon--gray{
+	background: url(#{$icons_path}i--speedometer--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin rocket-icon{
+	background: url(#{$icons_path}i--rocket.svg) no-repeat center / 100% auto;
+}
+@mixin rocket-icon--blue{
+	background: url(#{$icons_path}i--rocket--blue.svg) no-repeat center / 100% auto;
+}
+@mixin rocket-icon--gray{
+	background: url(#{$icons_path}i--rocket--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin magnifier-icon{
+	background: url(#{$icons_path}i--magnifier--tall.svg) no-repeat center / auto 100%;
+}
+@mixin magnifier-icon--blue{
+	background: url(#{$icons_path}i--magnifier--tall--blue.svg) no-repeat center / auto 100%;
+}
+@mixin magnifier-icon--gray{
+	background: url(#{$icons_path}i--magnifier--tall--gray.svg) no-repeat center / auto 100%;
+}
+
+@mixin heart-icon{
+	background: url(#{$icons_path}i--heart.svg) no-repeat center / 100% auto;
+}
+@mixin heart-icon--blue{
+	background: url(#{$icons_path}i--heart--blue.svg) no-repeat center / 100% auto;
+}
+@mixin heart-icon--gray{
+	background: url(#{$icons_path}i--heart--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin stack-icon{
+	background: url(#{$icons_path}i--stack.svg) no-repeat center / 100% auto;
+}
+@mixin stack-icon--blue{
+	background: url(#{$icons_path}i--stack--blue.svg) no-repeat center / 100% auto;
+}
+@mixin stack-icon--gray{
+	background: url(#{$icons_path}i--stack--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin copy-icon{
+	background: url(#{$icons_path}i--copy.svg) no-repeat center / 100% auto;
+}
+@mixin copy-icon--blue{
+	background: url(#{$icons_path}i--copy--blue.svg) no-repeat center / 100% auto;
+}
+@mixin copy-icon--gray{
+	background: url(#{$icons_path}i--copy--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin google_font-icon{
+	background: url(#{$icons_path}i--google_font.svg) no-repeat center / auto 100%;
+}
+@mixin google_font-icon--blue{
+	background: url(#{$icons_path}i--google_font--blue.svg) no-repeat center / auto 100%;
+}
+@mixin google_font-icon--gray{
+	background: url(#{$icons_path}i--google_font--gray.svg) no-repeat center / auto 100%;
+}
+
+@mixin gear-icon{
+	background: url(#{$icons_path}i--gear.svg) no-repeat center / 100% auto;
+}
+@mixin gear-icon--blue{
+	background: url(#{$icons_path}i--gear--blue.svg) no-repeat center / 100% auto;
+}
+@mixin gear-icon--gray{
+	background: url(#{$icons_path}i--gear--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin leaf-icon{
+	background: url(#{$icons_path}i--leaf.svg) no-repeat center / 100% auto;
+}
+@mixin leaf-icon--blue{
+	background: url(#{$icons_path}i--leaf--blue.svg) no-repeat center / 100% auto;
+}
+@mixin leaf-icon--gray{
+	background: url(#{$icons_path}i--leaf--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin infinity-icon{
+	background: url(#{$icons_path}i--infinity.svg) no-repeat center / 100% auto;
+}
+@mixin infinity-icon--blue{
+	background: url(#{$icons_path}i--infinity--blue.svg) no-repeat center / 100% auto;
+}
+@mixin infinity-icon--gray{
+	background: url(#{$icons_path}i--infinity--gray.svg) no-repeat center / 100% auto;
+}

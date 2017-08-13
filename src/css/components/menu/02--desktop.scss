@@ -1,0 +1,136 @@
+.menu--02--desktop{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+
+	transform: translateY(-100%);
+	opacity: 0;
+
+	width: 100%;
+
+	text-align: center;
+
+	transition: all .4s ease;
+
+	&.state-opened{
+		transform: none;
+		opacity: 1;
+	}
+}
+.menu__container--02--desktop{
+
+}
+.menu__list--02--desktop{
+	@include clear_list;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	margin: auto;
+}
+.menu__item--02--desktop{
+	opacity: 0;
+
+	margin-bottom: 13px;
+	transform: translateY(-5px);
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+	// no more than 20 menu items expected
+	@for $i from 1 through 20 {
+		&:nth-child(#{$i}){
+			transition-delay: #{100 * ($i - 1)}ms;
+		}
+	}
+
+	transition: all .4s .4s ease-out;
+
+	.state-opened &{
+		opacity: 1;
+		transform: none;
+	}
+}
+.menu__link--02--desktop{
+	@include font_loader($montserrat, 7, 'n');
+
+	position: relative;
+	display: inline-block;
+
+	font-size: 24px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+
+	&:hover, &:focus, &:active, &:visited{
+		text-decoration: none;
+		color: white;
+	}
+
+	@media (#{$max_phones}){
+		font-size: 15px;
+	}
+
+	&:before,
+	&:after{
+		content: "";
+		position: absolute;
+		opacity: 0;
+		top: 50%;
+		transform: translateY(-50%);
+
+		height: 3px;
+		width: 26px;
+
+		background-color: white;
+
+		transition: all .4s ease;
+	}
+	&:before{
+		left: -52px;
+	}
+	&:after{
+		right: -52px;
+	}
+
+	&.state-active, &:hover{
+		&:before,
+		&:after{
+			opacity: 1;
+		}
+	}
+}
+.menu__footer--02--desktop{
+	position: absolute;
+	left: $container_side_margin;
+	right: $container_side_margin;
+	bottom: 0;
+}
+.menu__footer_left_box--02--desktop{
+	float: left;
+}
+.menu__footer_text--02--desktop{
+	@include font_loader($montserrat, 4, 'n');
+
+	font-size: 12px;
+	color: white;
+
+	@media (#{$max_phones}){
+		font-size: 8px;
+	}
+}
+.menu__footer_right_box--02--desktop{
+	float: right;
+}
+.menu__footer_social--02--desktop{
+	margin-bottom: 45px;
+
+	@media (#{$max_phones}){
+		margin-bottom: 20px;
+	}
+}

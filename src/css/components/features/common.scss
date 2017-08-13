@@ -1,0 +1,290 @@
+.features{
+}
+.features__item{
+	text-align: center;
+}
+.features__title_box{
+	text-align: center;
+}
+.features__description{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: inline-block;
+
+	max-width: 500px;
+
+	font-size: 16px;
+	color: $concrete;
+}
+.features__row{
+	margin-bottom: 85px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.features__item_icon_circle{
+	display: inline-block;
+	height: 90px;
+	width: 90px;
+	
+	position: relative;
+
+	margin-bottom: 27px;
+
+	background-color: $sky;
+	border-radius: 50%;
+	
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		margin: auto;
+
+		width: 24px;
+		height: 24px;
+	}
+	&--icon--big{
+		&:before{
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	&--play-icon{
+		&:before{
+			@include play-icon;
+		}
+	}
+	&--play-icon--blue{
+		&:before{
+			@include play-icon--blue;
+		}
+	}
+	&--star-icon{
+		&:before{
+			@include star-icon;
+		}
+	}
+	&--star-icon--blue{
+		&:before{
+			@include star-icon--blue;
+		}
+	}
+	&--code-icon{
+		&:before{
+			@include code-icon;
+		}
+	}
+	&--code-icon--blue{
+		&:before{
+			@include code-icon--blue;
+		}
+	}
+	&--zip-icon{
+		&:before{
+			@include zip-icon;
+		}
+	}
+	&--zip-icon--blue{
+		&:before{
+			@include zip-icon--blue;
+		}
+	}
+	&--zip-circle-icon{
+		&:before{
+			@include zip-circle-icon;
+		}
+	}
+	&--zip-circle-icon--blue{
+		&:before{
+			@include zip-circle-icon--blue;
+		}
+	}
+	&--tune-icon{
+		&:before{
+			@include tune-icon;
+		}
+	}
+	&--tune-icon--blue{
+		&:before{
+			@include tune-icon--blue;
+		}
+	}
+	&--trophy-icon{
+		&:before{
+			@include trophy-icon;
+		}
+	}
+	&--trophy-icon--blue{
+		&:before{
+			@include trophy-icon--blue;
+		}
+	}
+	&--speedometer-icon{
+		&:before{
+			@include speedometer-icon;
+		}
+	}
+	&--speedometer-icon--blue{
+		&:before{
+			@include speedometer-icon--blue;
+		}
+	}
+	&--rocket-icon{
+		&:before{
+			@include rocket-icon;
+		}
+	}
+	&--rocket-icon--blue{
+		&:before{
+			@include rocket-icon--blue;
+		}
+	}
+	&--magnifier-icon{
+		&:before{
+			@include magnifier-icon;
+		}
+	}
+	&--magnifier-icon--blue{
+		&:before{
+			@include magnifier-icon--blue;
+		}
+	}
+	&--heart-icon{
+		&:before{
+			@include heart-icon;
+		}
+	}
+	&--heart-icon--blue{
+		&:before{
+			@include heart-icon--blue;
+		}
+	}
+	&--stack-icon{
+		&:before{
+			@include stack-icon;
+		}
+	}
+	&--stack-icon--blue{
+		&:before{
+			@include stack-icon--blue;
+		}
+	}
+	&--copy-icon{
+		&:before{
+			@include copy-icon;
+		}
+	}
+	&--copy-icon--blue{
+		&:before{
+			@include copy-icon--blue;
+		}
+	}
+	&--google_font-icon{
+		&:before{
+			@include google_font-icon;
+		}
+	}
+	&--google_font-icon--blue{
+		&:before{
+			@include google_font-icon--blue;
+		}
+	}
+	&--gear-icon{
+		&:before{
+			@include gear-icon;
+		}
+	}
+	&--gear-icon--blue{
+		&:before{
+			@include gear-icon--blue;
+		}
+	}
+	&--leaf-icon{
+		&:before{
+			@include leaf-icon;
+		}
+	}
+	&--leaf-icon--blue{
+		&:before{
+			@include leaf-icon--blue;
+		}
+	}
+	&--infinity-icon{
+		&:before{
+			@include infinity-icon;
+		}
+	}
+	&--infinity-icon--blue{
+		&:before{
+			@include infinity-icon--blue;
+		}
+	}
+}
+.features__item_title{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 10px;
+
+	font-size: 13px;
+	color: $steel;
+	text-transform: uppercase;
+	letter-spacing: 0.085em;
+}
+.features__item_text{
+	@include font_loader($montserrat, 4, 'n');
+
+	display: block;
+
+	width: 70%;
+	margin: auto;
+
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: $concrete;
+
+	.col-lg-3 &{
+		width: 90%;
+	}
+}
+.features__item_link{
+	@include font_loader($montserrat, 7, 'n');
+
+	display: inline-block;
+	position: relative;
+
+	max-width: 400px;
+
+	font-size: 10px;
+	text-transform: uppercase;
+	color: $sky;
+	text-decoration: none;
+
+	&:before{
+		content: "";
+		position: absolute;
+
+		left: 0;
+		right: 0;
+
+		bottom: -2px;
+		height: 1px;
+
+		background-color: grey;
+
+		transition: opacity 0.4s ease;
+	}
+
+	&:hover, &:focus, &:active, &:visited{
+		color: $sky;
+		text-decoration: none;
+
+		&:before{
+			opacity: 0.5;
+		}
+	}
+}

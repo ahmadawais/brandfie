@@ -1,0 +1,48 @@
+//17 cover specific styles
+.cover__content_box--17{
+	position: absolute;
+	left: $container_side_margin;
+	right: $container_side_margin;
+	margin: auto;
+	transform: translateY(-40%); //not centered actually
+	top: 50%;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		transform: translateY(-50%);
+	}
+}
+.cover__title--17{
+	max-width: 750px;
+	margin: auto auto 68px;
+
+	@media (#{$max_tablets}){
+		margin-bottom: 45px;
+	}
+	@media (#{$max_phones}){
+		margin-bottom: 30px;
+	}
+}
+.cover__title_text--17{
+	@include font_loader($montserrat, 7, 'n');
+
+	font-size: 68px;
+	letter-spacing: 0.03em;
+	color: white;
+	line-height: 1.3;
+
+	@media (#{$max_laptop}){
+		font-size: 55px;
+	}
+	@media (#{$max_tablets}){
+		font-size: 45px;
+	}
+	@media (#{$max_phones}){
+		font-size: 28px;
+
+		br{
+			display: none;
+		}
+	}
+}

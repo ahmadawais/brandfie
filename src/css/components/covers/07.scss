@@ -1,0 +1,39 @@
+//07 cover specific styles
+.cover__content_box--07{
+	position: absolute;
+	top: 45%;
+	left: $container_side_margin;
+	right: $container_side_margin;
+	margin: auto;
+	transform: translateY(-50%);
+}
+.cover__description_box--07{
+	text-align: center;
+}
+.cover__description_text--07{
+	@include font_loader($montserrat, 4, 'n');
+
+	color: white;
+
+	font-size: 36px;
+	letter-spacing: 0.06em;
+	line-height: 1.4;
+
+	@media (#{$max_tablets}){
+		br{
+			display: none;
+		}
+	}
+	@media (#{$max_phones}){
+		font-size: 22px;
+	}
+}
+.cover__social_box--07{
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 10%;
+
+	text-align: center;
+}

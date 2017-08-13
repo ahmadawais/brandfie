@@ -1,0 +1,30 @@
+.testimonials--03{
+	.slick-dots{
+		margin-top: 30px;
+	}
+}
+.testimonials__box--03{
+	max-width: 900px;
+
+	margin: auto;
+}
+.testimonials__item--03{
+	margin: 0 10px;
+}
+.testimonials__title--03{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 70px;
+
+	color: $steel;
+	font-size: 44px;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.testimonials__item_text--03{
+	padding-top: 45px;
+
+	font-size: 14px;
+}

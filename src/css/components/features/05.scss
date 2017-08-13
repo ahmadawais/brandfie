@@ -1,0 +1,35 @@
+.features--05{
+	padding-top: 60px;
+	padding-bottom: 25px;
+
+	@media (#{$max_phones}){
+		padding-top: 50px;
+	}
+}
+.features__title_box--05{
+	margin-bottom: 50px;
+}
+.features__title--05{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 44px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.features__item--05{
+	margin-bottom: 85px;
+
+	@media (#{$max_tablets}){
+		margin-bottom: 45px;
+	}
+}
+.features__item_icon_circle--05{
+	height: 35px;
+
+	background-color: transparent;
+}

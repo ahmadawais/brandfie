@@ -1,0 +1,59 @@
+.call_to_action--04{
+	position: relative;
+	padding: 200px 0;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&:before{
+		content: "";
+		position: absolute;
+
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 50%;
+
+		background-color: rgba(white, 0.8);
+	}
+
+	@media (#{$max_tablets}){
+		padding: 70px 0;
+
+		text-align: center;
+
+		&:before{
+			right: 0;
+		}
+	}
+}
+.call_to_action__title--04{
+	margin-bottom: 20px;
+
+	font-size: 36px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 22px;
+	}
+}
+.call_to_action__text--04{
+	margin-bottom: 37px;
+	max-width: 350px;
+
+	color: $concrete;
+	font-size: 13px;
+}
+.call_to_action__form--04{
+	width: 225px;
+
+	@media (#{$max_tablets}){
+		margin: auto;
+	}
+}
+.call_to_action__form__item--04{
+	width: 100%;
+
+	margin-bottom: 10px;
+}
