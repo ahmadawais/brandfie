@@ -8,7 +8,7 @@ $_price_plans_2_rows: 'max-width: 600px';
 	position: relative;
 
 	text-align: left;
-	
+
 	@media (#{$min_laptop}){
 		max-width: 1140px;
 	}
@@ -56,7 +56,7 @@ $_price_plans_2_rows: 'max-width: 600px';
 
 	border-radius: 12px;
 	background-color: #ebebed;
-	
+
 	@media (#{$max_tablets}){
 		width: auto;
 		padding-left: 60px;

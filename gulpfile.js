@@ -91,7 +91,7 @@ gulp.task('deploy', function() {
 });
 
 // gulp.task('dev:watch', function () {
-gulp.task('default', ['jade', 'css', 'main_js', 'compress_img', 'issues'], function () {
+gulp.task('default', ['jade', 'css', 'main_js', 'compress_img'], function () {
 	gulp.watch('src/templates/**', ['jade']),
 	gulp.watch('src/css/**', ['css']),
 	gulp.watch('src/js/main.js', ['main_js']),
