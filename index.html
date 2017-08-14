@@ -9,63 +9,62 @@
   </head>
   <body>
     <main class="page_wrapper">
-      <!-- == START OF COVER 18 ==-->
-      <div class="cover cover--18 js-cover">
-        <!-- == START OF HEADER 13 ==-->
-        <nav class="header header--13">
+      <!-- == START OF COVER 12 ==-->
+      <div class="cover__slider js-cover">
+        <!-- == START OF HEADER 01 ==-->
+        <nav class="header header--01">
           <div class="container header__container">
-            <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/logo--circle--black.svg" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
+            <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/logo--circle--white.svg" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
             <div class="header__center_box">
               <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="#" class="header__menu_link">about</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">tour</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">pricing</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">blog</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">contact</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">about</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">tour</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">pricing</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">blog</a></li>
+                <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">contact</a></li>
               </ul>
             </div>
-            <div class="header__right_box"><a href="#" class="button brandcolor_btn button--blue button--blue-shadow header__item--desktop">sign up</a>
-              <button type="button" data-menu-index="13" class="header__burger_button header__burger_button--black js-open-menu header__item--mobile"></button>
+            <div class="header__right_box">
+              <ul class="social header__item--desktop">
+                <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Twitter!" class="social__link social__link--twitter"></a></li>
+                <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Facebook!" class="social__link social__link--facebook"></a></li>
+                <li class="social__item social__item--left_margin"><a href="#" title="Say hello in G+!" class="social__link social__link--g_plus"></a></li>
+              </ul>
+              <button type="button" data-menu-index="01" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
-        <!-- == END OF HEADER 13 ==-->
-        <div class="cover__pic_box--18"><img src="img/brandfie/1.jpg" class="cover__img--18"></div>
-        <div class="container cover__container--18">
-          <div class="cover__text_box--18">
-            <h2 class="cover__title--18"><span class="cover__title_text--18">Get Your Brand's Selfie!<br>#Brandfie</span></h2>
-            <div class="cover__description_box--18"><span class="cover__description_text--18">
-                One creative image to attract all the creatives
-                to your brand!</span></div>
-            <div class="row">
-              <div class="col-xs-12 col-md-6 cover__feature--18">
-                <h3 class="cover__feature_title">yours forever</h3><span class="cover__feature_text">The enlightenment of your freedoms will listen oddly when you know that uniqueness is the lord.</span>
-              </div>
-              <div class="col-xs-12 col-md-6 cover__feature--18">
-                <h3 class="cover__feature_title">free specials</h3><span class="cover__feature_text">Man happens when you develop control so purely that whatsoever you are doing is your life.</span>
+        <!-- == END OF HEADER 01 ==-->
+        <div class="container cover__slider__arrows_box">
+          <button type="button" class="cover__slider__arrow cover__slider__arrow--left js-slider-prev-arrow"></button>
+          <button type="button" class="cover__slider__arrow cover__slider__arrow--right js-slider-next-arrow"></button>
+        </div>
+        <div data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: true, &quot;prevArrow&quot; : &quot;.js-slider-prev-arrow&quot;, &quot;nextArrow&quot;: &quot;.js-slider-next-arrow&quot;}" class="cover__slider__content_box js-slider">
+          <div style="background-image: url(img/brandfie/cover.jpg)" class="cover cover--12">
+            <div class="container">
+              <div class="cover__content_box--12">
+                <h2 class="cover__title--12"><span class="cover__title_text--12">A brand new way to excite&nbsp;<br>your audience</span></h2>
+                <div class="cover__description_box--12"><span class="cover__description_text--12">Who can study the satori and blessing of a monkey if he has the playful milk of the visitor?</span></div><a href="#" class="button button--border-white">read story</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- == END OF COVER 18 ==-->
+      <!-- == END OF COVER 12 ==-->
       <!-- == START OF ABOUT 05 ==-->
-      <div class="about about--05">
+      <div id="howitworks" class="about about--05">
         <div class="container">
           <h2 class="about__title about__title--05">Process and steps<br>of our workflow</h2>
         </div>
         <div class="about__process_box">
           <button type="button" data-content-index="process_step_1" class="about__process_item about__process_item--play-icon state-active js-content-trigger">
-            <h3 class="about__process_title">concept</h3>
+            <h3 class="about__process_title">Information</h3>
           </button>
           <button type="button" data-content-index="process_step_2" class="about__process_item about__process_item--star-icon js-content-trigger">
-            <h3 class="about__process_title">prototyping</h3>
+            <h3 class="about__process_title">Concept</h3>
           </button>
           <button type="button" data-content-index="process_step_3" class="about__process_item about__process_item--trophy-icon js-content-trigger">
-            <h3 class="about__process_title">web-design</h3>
-          </button>
-          <button type="button" data-content-index="process_step_4" class="about__process_item about__process_item--code-icon js-content-trigger">
-            <h3 class="about__process_title">development</h3>
+            <h3 class="about__process_title">Delivery</h3>
           </button>
           <!--decorative element-->
           <div class="about__line"></div>
@@ -73,33 +72,27 @@
         <!--the first one is visible by default-->
         <div data-content-index="process_step_1" style="display:block" class="container about__process_text_box js-content-box">
           <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Our superior mind for freedom is to view others cheerfully. The silence is a synthetic lotus. Who can forget the issue and sainthood of a believer if he has the holographic totality of the body. Paradise is not the unconditional mineral of the doer.</span></div>
-            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Confucius says: the fraternal moon is appearing, the searious karma is growing. The paradox is a holy moon. Who can discover the result and enlightenment of a believer if he has the magical afterlife of the thing.</span></div>
+            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">This is where we collect all the information regarding what are you trying to promote. You will fill a form with as much information as you can. It will help us come up with a concept.</span></div>
+            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">There are no limits as to what you can type, so we recommend explaining as much as you can. Our concepts are quick, simple and effective.</span></div>
           </div>
         </div>
         <div data-content-index="process_step_2" class="container about__process_text_box js-content-box">
           <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Yes, there is upstairs, it dies with suffering. To some, a seeker is an everything for receiving. Over there of samadhi will daily illuminate a mediocre lama. One remarkable milk i give you: respect each other. Not parallel places or nirvana, emerge the booda-hood.</span></div>
-            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Everything we do is connected with meditation: vision, dimension, density, ascension. Not paradise or meaningless places, realize the harmony. Occur and you will be discovered sincerely. Be soft. If you listen or disappear with a shining awareness, ascension hears you.</span></div>
+            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">We go through all the infomation that you have provided and try to come up with a few best possible ideas. We run a few trial shots and see which one works and looks the best.</span></div>
+            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Unless you have picked a pro plan, you don't get to see more than 1 option. Which is the final version you will receive.</span></div>
           </div>
         </div>
         <div data-content-index="process_step_3" class="container about__process_text_box js-content-box">
           <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Karmas, bodies, and inner lovers will always protect them. Going to the alchemistic world doesn’t follow history anymore than inventing creates further emptiness.</span></div>
-            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Always truly synthesise the meaningless ego. Be abstruse. The explosion of the booda-hood has control, but not everyone praises it. When the therapist of stigma develops the lights of the creator, the totality will know lord. The visitor has truth, but not everyone follows it.</span></div>
-          </div>
-        </div>
-        <div data-content-index="process_step_4" class="container about__process_text_box js-content-box">
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">To some, a cow is a stigma for realizing. Be unconditional. Silence, enlightenment and a hermetic mind. The underworld is full of resurrection. To some, a yogi is an art for yearning. One must capture the therapist in order to desire the aspect of hermetic awareness.</span></div>
-            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Be sincere. The love is a psychic master. To some, a creator is a suffering for believing. I listen and i sit. i convert and i preach. i rise and i balance.</span></div>
+            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">The Photograph stage is self explanatory.</span></div>
+            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05"> </span></div>
           </div>
         </div>
       </div>
       <!-- == END OF ABOUT 05 ==-->
       <!-- == START OF WORKS 01 ==-->
       <div class="works works--01">
-        <div class="container">
+        <div id="projects" class="container">
           <div class="works__title_box">
             <div class="works__title">Our projects</div>
             <div class="works__text">Play with colors, animations and content. Enjoy our friendly in few minutes with Phoenix UI kit.</div>
@@ -138,18 +131,19 @@
       <div class="prices prices--01">
         <div class="container-fluid prices_container--01">
           <div class="prices__text_box--01">
-            <h2 class="prices__title">Choose your perfect plan</h2><span class="prices__description prices__description--01">You were put on this earth to achieve your greatest self, to live out your purpose, and to do it courageously and very simple.</span><span class="prices__offer_text--01">Do you need in special offer?</span><a href="#" class="prices__offer_link--01">Write to us</a>
+            <h2 class="prices__title">Choose your perfect plan</h2><span class="prices__description prices__description--01">Based on your needs we have carefully crafted 2 plans that is worth your money and our time</span><span class="prices__offer_text--01">Do you need in special offer?</span><a href="#" class="prices__offer_link--01">Write to us</a>
           </div>
           <div class="prices__items_box prices__items_box--01">
             <div class="prices__item prices__item--01 prices__item--accent--01">
-              <h2 class="prices__item__title--01">Starter</h2><span class="prices__item__price--01">free</span><span class="prices__item__price_info--01">Build your schedule every day</span>
+              <h2 class="prices__item__title--01">Single</h2><span class="prices__item__price--01">$ 99</span><span class="prices__item__price_info--01">One Concept</span>
               <ul class="prices__item__features_list prices__item__features_list--01">
-                <li class="prices__item__features_list__item">Unlimited notes</li>
-                <li class="prices__item__features_list__item">Social activity analytics</li>
+                <li class="prices__item__features_list__item">4 Hour Time Frame</li>
+                <li class="prices__item__features_list__item">No Changes</li>
+                <li class="prices__item__features_list__item">No Changes</li>
               </ul><a href="#" class="button brandcolor_btn button--blue button--blue-shadow">get started</a>
             </div>
             <div class="prices__item prices__item--01">
-              <h2 class="prices__item__title--01">Pro</h2><span class="prices__item__price--01">$ 9.99</span><span class="prices__item__price_info--01">Make your life better</span>
+              <h2 class="prices__item__title--01">Pro</h2><span class="prices__item__price--01">$ 149</span><span class="prices__item__price_info--01">Two Concepts or 1 Concept with 1 Time Changes</span>
               <ul class="prices__item__features_list prices__item__features_list--01">
                 <li class="prices__item__features_list__item">Unlimited notes</li>
                 <li class="prices__item__features_list__item">Social activity analytics</li>
