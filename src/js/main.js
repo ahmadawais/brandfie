@@ -2,11 +2,15 @@
 window.addEventListener('DOMContentLoaded', function (){
 	'use strict';
 
+	// START OF: Lightbox Options ============
+
 	lightbox.option({
 		'resizeDuration': 2000,
 		'wrapAround': true,
 		'resizeDuration': 700
 	});
+
+	// ===== END OF: Lightbox Options =============
 
 	// START OF: utilities =====
 	function throttle (callback, limit) {

@@ -1,11 +1,11 @@
 {
-  "name": "Brandfie",
+  "name": "brandfie",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ui-market.com",
+  "author": "brandfie",
   "license": "",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
