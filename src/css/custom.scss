@@ -2,20 +2,11 @@
  * Custom CSS.
  */
 
-$brand-color-1: #ed1b2e;
-$brand-color-1-lite: rgba(237, 27, 46, 0.54);
-
-
-// CUSTOM CSS.
-
-.brandcolor_btn {
-	background: $brand-color-1;
-	-webkit-box-shadow: 4px 6.9px 16px $brand-color-1-lite;
-	    -moz-box-shadow: 4px 6.9px 16px $brand-color-1-lite;
-	    box-shadow: 4px 6.9px 16px $brand-color-1-lite;
-
+.bluecolor {
+	color: #1B8BF9;
+	font-weight: 500;
 }
 
-.prices__offer_link--01 {
-	color: $brand-color-1;
+.cover--18 {
+	background-color: #fff;
 }

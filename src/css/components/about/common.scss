@@ -85,7 +85,7 @@ $_steps_smaller: 'max-width: 600px';
 		margin: auto;
 
 		width: 24px;
-		height: 24px;
+		height: 32px;
 
 		transition: opacity .4s ease;
 	}
@@ -100,6 +100,33 @@ $_steps_smaller: 'max-width: 600px';
 
 		.about__process_title:before{
 			background-color: $sky;
+		}
+	}
+
+	&--note-icon {
+		&:before{
+			@include note-icon--gray;
+		}
+		&:after{
+			@include note-icon--blue;
+		}
+	}
+
+	&--concept-icon {
+		&:before{
+			@include concept-icon--gray;
+		}
+		&:after{
+			@include concept-icon--blue;
+		}
+	}
+
+	&--photo-icon {
+		&:before{
+			@include photo-icon--gray;
+		}
+		&:after{
+			@include photo-icon--blue;
 		}
 	}
 
@@ -443,6 +470,16 @@ $_steps_smaller: 'max-width: 600px';
 	&--infinity-icon--blue{
 		&:before{
 			@include infinity-icon--blue;
+		}
+	}
+	&--note-icon--blue{
+		&:before{
+			@include note-icon--blue;
+		}
+	}
+	&--concept-icon--blue{
+		&:before{
+			@include concept-icon--blue;
 		}
 	}
 }

@@ -148,6 +148,36 @@
 	background: url(#{$icons_path}i--gear--gray.svg) no-repeat center / 100% auto;
 }
 
+@mixin note-icon{
+	background: url(#{$icons_path}i--note.svg) no-repeat center / 100% auto;
+}
+@mixin note-icon--blue{
+	background: url(#{$icons_path}i--note--blue.svg) no-repeat center / 100% auto;
+}
+@mixin note-icon--gray{
+	background: url(#{$icons_path}i--note--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin concept-icon{
+	background: url(#{$icons_path}i--concept.svg) no-repeat center / 100% auto;
+}
+@mixin concept-icon--blue{
+	background: url(#{$icons_path}i--concept--blue.svg) no-repeat center / 100% auto;
+}
+@mixin concept-icon--gray{
+	background: url(#{$icons_path}i--concept--gray.svg) no-repeat center / 100% auto;
+}
+
+@mixin photo-icon{
+	background: url(#{$icons_path}i--photo.svg) no-repeat center / 100% auto;
+}
+@mixin photo-icon--blue{
+	background: url(#{$icons_path}i--photo--blue.svg) no-repeat center / 100% auto;
+}
+@mixin photo-icon--gray{
+	background: url(#{$icons_path}i--photo--gray.svg) no-repeat center / 100% auto;
+}
+
 @mixin leaf-icon{
 	background: url(#{$icons_path}i--leaf.svg) no-repeat center / 100% auto;
 }

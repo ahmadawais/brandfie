@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
-    <title>Brandfies</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Brandfie</title>
   </head>
   <body>
     <main class="page_wrapper">
@@ -17,32 +18,30 @@
             <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/logo--circle--black.svg" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
             <div class="header__center_box">
               <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="#" class="header__menu_link">about</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">tour</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">pricing</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">blog</a></li>
-                <li class="header__menu_item"><a href="#" class="header__menu_link">contact</a></li>
+                <li class="header__menu_item"><a href="#how" class="header__menu_link">how it works?</a></li>
+                <li class="header__menu_item"><a href="#work" class="header__menu_link">projects</a></li>
+                <li class="header__menu_item"><a href="#price" class="header__menu_link">pricing</a></li>
               </ul>
             </div>
-            <div class="header__right_box"><a href="#" class="button brandcolor_btn button--blue button--blue-shadow header__item--desktop">sign up</a>
+            <div class="header__right_box"><a href="#price" class="button brandcolor_btn button--blue button--blue-shadow header__item--desktop">get a brandfie</a>
               <button type="button" data-menu-index="13" class="header__burger_button header__burger_button--black js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
         <!-- == END OF HEADER 13 ==-->
-        <div class="cover__pic_box--18"><img src="img/brandfie/1.jpg" class="cover__img--18"></div>
+        <div class="cover__pic_box--18"><img src="img/brandfie/cover.png" class="cover__img--18"></div>
         <div class="container cover__container--18">
           <div class="cover__text_box--18">
-            <h2 class="cover__title--18"><span class="cover__title_text--18">Get Your Brand's Selfie!<br>#Brandfie</span></h2>
+            <h2 class="cover__title--18"><span class="cover__title_text--18">Get Your Brand's Selfie! <span class="bluecolor">#Brandfie</span></span></h2>
             <div class="cover__description_box--18"><span class="cover__description_text--18">
                 One creative image to attract all the creatives
                 to your brand!</span></div>
             <div class="row">
               <div class="col-xs-12 col-md-6 cover__feature--18">
-                <h3 class="cover__feature_title">yours forever</h3><span class="cover__feature_text">The enlightenment of your freedoms will listen oddly when you know that uniqueness is the lord.</span>
+                <h3 class="cover__feature_title">What Brandfie is</h3><span class="cover__feature_text">A very quick creative image to use for your promotions on social media.</span>
               </div>
               <div class="col-xs-12 col-md-6 cover__feature--18">
-                <h3 class="cover__feature_title">free specials</h3><span class="cover__feature_text">Man happens when you develop control so purely that whatsoever you are doing is your life.</span>
+                <h3 class="cover__feature_title">What Brandfie is NOT</h3><span class="cover__feature_text">It is not "advertising", there is no brainstorming and presenting options or getting client feedback.</span>
               </div>
             </div>
           </div>
@@ -51,21 +50,18 @@
       <!-- == END OF COVER 18 ==-->
       <!-- == START OF ABOUT 05 ==-->
       <div class="about about--05">
-        <div class="container">
+        <div id="how" class="container">
           <h2 class="about__title about__title--05">Process and steps<br>of our workflow</h2>
         </div>
         <div class="about__process_box">
-          <button type="button" data-content-index="process_step_1" class="about__process_item about__process_item--play-icon state-active js-content-trigger">
-            <h3 class="about__process_title">concept</h3>
+          <button type="button" data-content-index="process_step_1" class="about__process_item about__process_item--note-icon state-active js-content-trigger">
+            <h3 class="about__process_title">Information</h3>
           </button>
-          <button type="button" data-content-index="process_step_2" class="about__process_item about__process_item--star-icon js-content-trigger">
-            <h3 class="about__process_title">prototyping</h3>
+          <button type="button" data-content-index="process_step_2" class="about__process_item about__process_item--concept-icon js-content-trigger">
+            <h3 class="about__process_title">Concept</h3>
           </button>
-          <button type="button" data-content-index="process_step_3" class="about__process_item about__process_item--trophy-icon js-content-trigger">
-            <h3 class="about__process_title">web-design</h3>
-          </button>
-          <button type="button" data-content-index="process_step_4" class="about__process_item about__process_item--code-icon js-content-trigger">
-            <h3 class="about__process_title">development</h3>
+          <button type="button" data-content-index="process_step_3" class="about__process_item about__process_item--photo-icon js-content-trigger">
+            <h3 class="about__process_title">Deliver</h3>
           </button>
           <!--decorative element-->
           <div class="about__line"></div>
@@ -89,72 +85,74 @@
             <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Always truly synthesise the meaningless ego. Be abstruse. The explosion of the booda-hood has control, but not everyone praises it. When the therapist of stigma develops the lights of the creator, the totality will know lord. The visitor has truth, but not everyone follows it.</span></div>
           </div>
         </div>
-        <div data-content-index="process_step_4" class="container about__process_text_box js-content-box">
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">To some, a cow is a stigma for realizing. Be unconditional. Silence, enlightenment and a hermetic mind. The underworld is full of resurrection. To some, a yogi is an art for yearning. One must capture the therapist in order to desire the aspect of hermetic awareness.</span></div>
-            <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Be sincere. The love is a psychic master. To some, a creator is a suffering for believing. I listen and i sit. i convert and i preach. i rise and i balance.</span></div>
-          </div>
-        </div>
       </div>
       <!-- == END OF ABOUT 05 ==-->
       <!-- == START OF WORKS 01 ==-->
       <div class="works works--01">
-        <div class="container">
+        <div id="work" class="container">
           <div class="works__title_box">
             <div class="works__title">Our projects</div>
-            <div class="works__text">Play with colors, animations and content. Enjoy our friendly in few minutes with Phoenix UI kit.</div>
+            <div class="works__text">Some of our best works so far</div>
           </div>
         </div>
-        <div class="works__row works__row--01"><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-1.jpg)" class="works__item_img works__item_img--01"></div>
+        <div class="works__row works__row--01"><a href="img/brandfie/works/1.jpg" data-lightbox="image-1" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/1.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">Phoenix ui kit</h3><span class="works__item_tags--01">Web-design, Front-end</span>
-            </div></a><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-2.png)" class="works__item_img works__item_img--01"></div>
+              <h3 class="works__item_title--01">Syntax Podcst</h3><span class="works__item_tags--01">Episode 4: JavaScript Tooling</span>
+            </div></a><a href="img/brandfie/works/2.jpg" data-lightbox="image-2" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/2.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">universe cd cover</h3><span class="works__item_tags--01">Graphic design</span>
-            </div></a><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-3.jpg)" class="works__item_img works__item_img--01"></div>
+              <h3 class="works__item_title--01">InHer Skills</h3><span class="works__item_tags--01">E-Course Promotion</span>
+            </div></a><a href="img/brandfie/works/3.jpg" data-lightbox="image-3" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/3.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">Brut template</h3><span class="works__item_tags--01">Web-design, Front-end</span>
-            </div></a><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-4.jpg)" class="works__item_img works__item_img--01"></div>
+              <h3 class="works__item_title--01">WPTakeaway Newsletter</h3><span class="works__item_tags--01">Promotion</span>
+            </div></a><a href="img/brandfie/works/4.jpg" data-lightbox="image-4" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/4.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">UI-market</h3><span class="works__item_tags--01">Web-design, Front-end</span>
+              <h3 class="works__item_title--01">Syntax Podcast</h3><span class="works__item_tags--01">Episode 7: Scott's Origin Story</span>
             </div></a></div>
-        <div class="works__row works__row--01 state-hidden-works-row"><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-5.jpg)" class="works__item_img works__item_img--01"></div>
+        <div class="works__row works__row--01"><a href="img/brandfie/works/5.jpg" data-lightbox="image-5" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/5.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">404 page</h3><span class="works__item_tags--01">Web-design</span>
-            </div></a><a href="#" class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/pic--case-6.png)" class="works__item_img works__item_img--01"></div>
+              <h3 class="works__item_title--01">Syntax Podcast</h3><span class="works__item_tags--01">Episode 5: Freelancing</span>
+            </div></a><a href="img/brandfie/works/6.jpg" data-lightbox="image-6" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/6.jpg)" class="works__item_img works__item_img--01"></div>
             <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">Phoenix cover</h3><span class="works__item_tags--01">Art Direction, Concept</span>
+              <h3 class="works__item_title--01">WPTakeaway Newsletter</h3><span class="works__item_tags--01">Promotion</span>
+            </div></a><a href="img/brandfie/works/7.jpg" data-lightbox="image-7" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/7.jpg)" class="works__item_img works__item_img--01"></div>
+            <div class="works__item_text_box--01">
+              <h3 class="works__item_title--01">Syntax Podcast</h3><span class="works__item_tags--01">Episode 6: Accepting Money Online</span>
+            </div></a><a href="img/brandfie/works/8.jpg" data-lightbox="image-8" class="works__item works__item--01">
+            <div style="background-image: url(img/brandfie/works/8.jpg)" class="works__item_img works__item_img--01"></div>
+            <div class="works__item_text_box--01">
+              <h3 class="works__item_title--01">Insurance</h3><span class="works__item_tags--01">Work in Progress</span>
             </div></a></div>
-        <button class="works__show_more_button--01 button button--border-black js-show-more-works">view more</button>
       </div>
       <!-- == END OF WORKS 01 ==-->
       <!-- == START OF PRICES 01 ==-->
       <div class="prices prices--01">
-        <div class="container-fluid prices_container--01">
+        <div id="price" class="container-fluid prices_container--01">
           <div class="prices__text_box--01">
-            <h2 class="prices__title">Choose your perfect plan</h2><span class="prices__description prices__description--01">You were put on this earth to achieve your greatest self, to live out your purpose, and to do it courageously and very simple.</span><span class="prices__offer_text--01">Do you need in special offer?</span><a href="#" class="prices__offer_link--01">Write to us</a>
+            <h2 class="prices__title">Choose your perfect plan</h2><span class="prices__description prices__description--01">We have carefully crafted two plans for your promotion needs. Pick the one that works best for you.</span><span class="prices__offer_text--01">Do you need in special offer?</span><a href="#" class="prices__offer_link--01">Write to us</a>
           </div>
           <div class="prices__items_box prices__items_box--01">
             <div class="prices__item prices__item--01 prices__item--accent--01">
-              <h2 class="prices__item__title--01">Starter</h2><span class="prices__item__price--01">free</span><span class="prices__item__price_info--01">Build your schedule every day</span>
+              <h2 class="prices__item__title--01">Single</h2><span class="prices__item__price--01">$ 99</span><span class="prices__item__price_info--01">Best for One Time Promotions</span>
               <ul class="prices__item__features_list prices__item__features_list--01">
-                <li class="prices__item__features_list__item">Unlimited notes</li>
-                <li class="prices__item__features_list__item">Social activity analytics</li>
+                <li class="prices__item__features_list__item">1 Brandfie</li>
+                <li class="prices__item__features_list__item">🚀 Fast</li>
+                <li class="prices__item__features_list__item">Delivered within 4 hours</li>
               </ul><a href="#" class="button brandcolor_btn button--blue button--blue-shadow">get started</a>
             </div>
             <div class="prices__item prices__item--01">
-              <h2 class="prices__item__title--01">Pro</h2><span class="prices__item__price--01">$ 9.99</span><span class="prices__item__price_info--01">Make your life better</span>
+              <h2 class="prices__item__title--01">Pro</h2><span class="prices__item__price--01">$ 149</span><span class="prices__item__price_info--01">Best for Longer Promotions</span>
               <ul class="prices__item__features_list prices__item__features_list--01">
-                <li class="prices__item__features_list__item">Unlimited notes</li>
-                <li class="prices__item__features_list__item">Social activity analytics</li>
-                <li class="prices__item__features_list__item">Customer care</li>
-              </ul><a href="#" class="button button--white button--gray-shadow">try now</a>
+                <li class="prices__item__features_list__item">2 different Brandfies</li>
+                <li class="prices__item__features_list__item"> or Changes to the same Brandfie</li>
+                <li class="prices__item__features_list__item">Delivered in 24 hours</li>
+              </ul><a href="#" class="button button--white button--gray-shadow">get started</a>
             </div>
           </div>
         </div>
