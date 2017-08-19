@@ -3,7 +3,7 @@
 	background-color: #eee;
 
 	@media (#{$max_tablets}){
-		height: auto;
+		height: 90%;
 
 		padding-top: 80px;
 		padding-bottom: 30px;
@@ -16,25 +16,23 @@
 }
 .cover__container--18{
 	position: relative;
-
+	overflow: visible;
 	height: 100%;
 }
 .cover__pic_box--18{
 	position: absolute;
 	bottom: 0;
-	left: -20%;
-	left: -5%;
-	top: 60%;
-
+	left: -10%;
+	top: 67.5%;
 	transform: translateY(-50%);
 
-	height: 70%;
+	height: 90%;
 
 	@media (#{$min_desktop}){
-		left: -16%;
+		left: -10%;
 	}
 	@media (#{$max_laptop}){
-		left: -36%;
+		left: -20%;
 	}
 	@media (#{$max_tablets}){
 		position: static;

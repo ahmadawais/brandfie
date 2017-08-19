@@ -7,6 +7,13 @@
 	font-weight: 500;
 }
 
-.cover--18 {
-	background-color: #fff;
+.header__item--desktop{
+	@media (#{$max_tablets}){
+		display: inline-block;
+	}
+}
+.header__item--mobile{
+	@media (#{$min_tablets}){
+		display: inline-block;
+	}
 }

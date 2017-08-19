@@ -2,21 +2,17 @@
 nav.header.header--13
 	.container.header__container
 		.header__left_box
-			a.header__logo_box(href="#", title="Home")
+			a.header__logo_box(href="index.html", title="Home")
 				img.header__logo_img(src="img/etc/logo--circle--black.svg", alt="Phoenix UI kit logo")
-		.header__center_box
+		.header__right_box
 			ul.header__menu_list.header__item--desktop
 				li.header__menu_item
 					a.header__menu_link(href="#how")
 						| how it works?
 				li.header__menu_item
-					a.header__menu_link(href="#work")
-						| projects
-				li.header__menu_item
 					a.header__menu_link(href="#price")
 						| pricing
-		.header__right_box
-			a.button.brandcolor_btn.button--blue.button--blue-shadow.header__item--desktop(href="#price")
-				| get a brandfie
-			button.header__burger_button.header__burger_button--black.js-open-menu.header__item--mobile(type="button", data-menu-index="13")
+				li.header__menu_item
+					a.header__menu_link(href="#contact")
+						| contact
 // == END OF HEADER 13 ==
