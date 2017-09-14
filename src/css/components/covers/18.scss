@@ -22,17 +22,17 @@
 .cover__pic_box--18{
 	position: absolute;
 	bottom: 0;
-	left: -10%;
-	top: 67.5%;
+	left: 8%;
+	top: 50%;
 	transform: translateY(-50%);
 
 	height: 80%;
 
 	@media (#{$min_desktop}){
-		left: -10%;
+		left: 12%;
 	}
 	@media (#{$max_laptop}){
-		left: -20%;
+		left: 0%;
 	}
 	@media (#{$max_tablets}){
 		position: static;
