@@ -1,5 +1,7 @@
 # BRANDFie.pro
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmadawais/brandfie.svg)](https://greenkeeper.io/)
+
 A work in progress startup by Dhanish Gajjar and Ahmad Awais!
 
 ---
